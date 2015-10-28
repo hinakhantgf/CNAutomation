@@ -55,11 +55,10 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class CTUser {
+public class CTUser extends CNBase{
 	static WebDriver driver;
 	static File src = new File("C:\\Users\\554525\\Desktop\\Sneha\\CNProject\\CT_Data.xls");
 	static int i;
-	static String baseUrl = "https://uat1-theglobalfund.cs18.force.com/GM/login";
 	public String handle,handle1;
 	
 	//Login to the application with CT user
@@ -79,7 +78,7 @@ public class CTUser {
 		for (i=1;i<rowcount;i++ ){
 			String data00 = wb.getSheet("CTLogin").getCell(0,i).getContents();
 			String data01 = wb.getSheet("CTLogin").getCell(1,i).getContents();
-			driver.get(baseUrl);
+			driver.get(baseUrl2);
 			//Enter username in login page
 			WebElement username = driver.findElement(By.id("username"));
 			HighlightElement.elementHighlight(username);
@@ -98,10 +97,59 @@ public class CTUser {
 			//Reporter.log("<a href=\"" + TakescreenShot + "\"><p align=\"left\">Login Sucessfully screenshot at " + new Date()+ "</p>");
 		}
 	
-	}		
+	}	
+	
+	
+	//Verify CT user is able to edit details of CN with status as Submitted to Global Fund.
+	
+		@Test  (priority = 1)
+		public static void CTEditChk() throws BiffException, IOException, Exception  {
+			
+			Workbook wb = Workbook.getWorkbook(srcCNRegression);
+			Record = wb.getSheet("CTEditRecord").getCell(0,1).getContents();
+			boolean exists;
+			//WebElement CN=driver.findElement(By.id("tsidLabel"));
+			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+			//CN.click();
+			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+			//driver.findElement(By.linkText("Concept Note and Grantmaking")).click();
+			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);	
+			Thread.sleep(1000);
+			driver.findElement(By.linkText("Concept Notes")).click();
+			Thread.sleep(5000);
+			driver.findElement(By.linkText(Record)).click();
+			//Click on GOALS & IMPACT INDICATORS link
+			WebElement impact = driver.findElement(By.linkText("GOALS & IMPACT INDICATORS"));
+			HighlightElement.elementHighlight(impact);
+			impact.click();
+			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);	
+			//Check if Add Goal link is present on the page
+			exists= isElementPresent("Add Goal");
+			Assert.assertTrue(exists);
+			//Check if Add Custom Indicator link is present on the page
+			exists= isElementPresent("Add Custom Indicator");
+			Assert.assertTrue(exists);
+			//Check if Add Standard Indicator link is present on the page
+			exists= isElementPresent("Add Standard Indicator");
+			Assert.assertTrue(exists);
+	}	
+		//Function to check element is present on the page
+		public static boolean isElementPresent (String id)
+		{
+			boolean present;
+			if(driver.findElements(By.linkText(id)).size()!=0)
+			{
+			 present = true;
+			}
+			else
+			{
+			 present = false;
+			}
+		return present;
+		}
 	
 	//Verify CT can view Assess Likelihood button and able to click on pretty sure radio button for CN with status as "Submitted to Global Fund"
-		@Test  (priority = 1)
+		@Test  (priority = 2)
 		public static void CTPositiveAssessment() throws BiffException, IOException, Exception  {
 			
 			Workbook wb = Workbook.getWorkbook(src);
@@ -111,7 +159,8 @@ public class CTUser {
 			//CN.click();
 			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 			//driver.findElement(By.linkText("Concept Note and Grantmaking")).click();
-			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);		
+			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+			Thread.sleep(1000);
 			driver.findElement(By.linkText("Concept Notes")).click();
 			Thread.sleep(5000);
 			driver.findElement(By.linkText(data00)).click();
@@ -132,9 +181,10 @@ public class CTUser {
 			Thread.sleep(2000);
 			confirm.click();
 		}
+	
 		
 	//Verify CT can view Assess Likelihood button and able to click on not sure radio button for CN with status as "Submitted to Global Fund"
-			@Test  (priority = 1)
+			@Test  (priority = 3)
 			public static void CTNegativeAssessment() throws BiffException, IOException, Exception  {
 					
 			Workbook wb = Workbook.getWorkbook(src);
@@ -146,7 +196,7 @@ public class CTUser {
 			//CN.click();
 			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 			//driver.findElement(By.linkText("Concept Note and Grantmaking")).click();
-			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);		
+			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);	
 			driver.findElement(By.linkText("Concept Notes")).click();
 			Thread.sleep(5000);
 			driver.findElement(By.linkText(data00)).click();
@@ -171,13 +221,13 @@ public class CTUser {
 			HighlightElement.elementHighlight(confirm);
 			Thread.sleep(2000);
 			confirm.click();
-			driver.close();
+		
 		}
 								
 	
 	//CT is able to view the Final CT Review button and click it for CN with status as "Submitted to Global Fund"
 	
-			@Test  (priority = 3)
+			@Test  (priority = 4)
 			public static void FinalCTReview() throws BiffException, IOException, Exception  {
 	
 			Workbook wb = Workbook.getWorkbook(src);
@@ -197,14 +247,17 @@ public class CTUser {
 			WebElement FinalReview = driver.findElement(By.linkText("Final CT Review"));
 			HighlightElement.elementHighlight(FinalReview);
 			FinalReview.click();
+			Thread.sleep(1000);
 			//Click on the checkbox to confirm the review process
 			WebElement ChkBox = driver.findElement(By.id("CNoverview:frm:checkBox"));
 			HighlightElement.elementHighlight(ChkBox);
 			ChkBox.click();
+			Thread.sleep(1000);
 			//Click on Final CT Review button
 			WebElement FinalCTReviewBtn = driver.findElement(By.id("CNoverview:frm:finishCTR"));
 			HighlightElement.elementHighlight(FinalCTReviewBtn);
 			FinalCTReviewBtn.click();
+			Thread.sleep(1000);
 			//Click on Confirm button
 			WebElement ConfirmBtn =	driver.findElement(By.name("CNoverview:frm:j_id89"));
 			HighlightElement.elementHighlight(ConfirmBtn);
@@ -214,7 +267,7 @@ public class CTUser {
 	
 
 	//CT upload the final translated document- Translation Upload button for CN with status as "Reviewed and OK for TRP/GAC1"
-			@Test  (priority = 4)
+			@Test  (priority = 5)
 			public static void FinalTranslationReview() throws BiffException, IOException, Exception  {
 
 				Workbook wb = Workbook.getWorkbook(src);
@@ -225,7 +278,8 @@ public class CTUser {
 				//CN.click();
 				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 				//driver.findElement(By.linkText("Concept Note and Grantmaking")).click();
-				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);		
+				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);	
+				Thread.sleep(1000);
 				driver.findElement(By.linkText("Concept Notes")).click();
 				WebElement record=driver.findElement(By.linkText(data00));
 				HighlightElement.elementHighlight(record);
@@ -235,7 +289,7 @@ public class CTUser {
 				HighlightElement.elementHighlight(ManageDocs);
 				ManageDocs.click();
 				//Click on Final Translation Review button
-				WebElement FinalTranslationBtn = driver.findElement(By.id("Final Translation Review"));
+				WebElement FinalTranslationBtn = driver.findElement(By.linkText("Final Translation Review"));
 				HighlightElement.elementHighlight(FinalTranslationBtn);
 				FinalTranslationBtn.click();
 				//Click on Confirm button

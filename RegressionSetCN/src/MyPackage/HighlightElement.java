@@ -6,7 +6,7 @@ import java.sql.*;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
-public class HighlightElement extends CNBase {
+public class HighlightElement extends CNAutoDemo {
 
 	public static void elementHighlight(WebElement element) {
 		for (int i = 0; i < 2; i++) {
