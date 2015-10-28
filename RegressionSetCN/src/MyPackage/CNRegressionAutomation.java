@@ -1515,7 +1515,41 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 				HighlightElement.elementHighlight(ConfirmBtn );
 				ConfirmBtn.click();
 			}
+
+			@Test  (priority = 21)
+			public static void CCMEditChkAfterCTReview() throws BiffException, IOException, Exception  {
+					
+				Workbook wb = Workbook.getWorkbook(srcCNRegression);
+				Record = wb.getSheet("Record").getCell(0,1).getContents();
+				boolean exists;
+				//WebElement CN=driver.findElement(By.id("tsidLabel"));
+				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+				//CN.click();
+				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+				//driver.findElement(By.linkText("Concept Note and Grantmaking")).click();
+				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);	
+				Thread.sleep(1000);
+				driver.findElement(By.linkText("Concept Notes")).click();
+				Thread.sleep(5000);
+				driver.findElement(By.linkText(Record)).click();
+				//Click on GOALS & IMPACT INDICATORS link
+				WebElement impact = driver.findElement(By.linkText("GOALS & IMPACT INDICATORS"));
+				HighlightElement.elementHighlight(impact);
+				impact.click();
+				driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);	
+				//Check if Add Goal link is present on the page
+				exists= isElementPresent("Add Goal");
+				Assert.assertFalse(exists);
+				//Check if Add Custom Indicator link is present on the page
+				exists= isElementPresent("Add Custom Indicator");
+				Assert.assertFalse(exists);
+				//Check if Add Standard Indicator link is present on the page
+				exists= isElementPresent("Add Standard Indicator");
+				Assert.assertFalse(exists);
+			}	
+				
 }
+
 
 	
 	
