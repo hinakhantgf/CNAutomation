@@ -1360,24 +1360,57 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 		//Check if Add Standard Indicator link is present on the page
 		exists= isElementPresent("Add Standard Indicator");
 		Assert.assertFalse(exists);
-}	
-	//Function to check element is present on the page
-	public static boolean isElementPresent (String id)
-	{
-		boolean present;
-		if(driver.findElements(By.linkText(id)).size()!=0)
-		{
-		 present = true;
-		}
-		else
-		{
-		 present = false;
-		}
-	return present;
-	}
-
+}
 	
- @Test(priority = 21)
+//Verify CCM user is not able to edit details of CN with status as Reviewed and OK for TRP/GAC1
+	
+	@Test  (priority = 21)
+	public static void CCMEditChkAfterCTReview() throws BiffException, IOException, Exception  {
+			
+		Workbook wb = Workbook.getWorkbook(srcCNRegression);
+		Record = wb.getSheet("Record").getCell(0,1).getContents();
+		boolean exists;
+		//WebElement CN=driver.findElement(By.id("tsidLabel"));
+		//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		//CN.click();
+		//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		//driver.findElement(By.linkText("Concept Note and Grantmaking")).click();
+		//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);	
+		Thread.sleep(1000);
+		driver.findElement(By.linkText("Concept Notes")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.linkText(Record)).click();
+		//Click on GOALS & IMPACT INDICATORS link
+		WebElement impact = driver.findElement(By.linkText("GOALS & IMPACT INDICATORS"));
+		HighlightElement.elementHighlight(impact);
+		impact.click();
+		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);	
+		//Check if Add Goal link is present on the page
+		exists= isElementPresent("Add Goal");
+		Assert.assertFalse(exists);
+		//Check if Add Custom Indicator link is present on the page
+		exists= isElementPresent("Add Custom Indicator");
+		Assert.assertFalse(exists);
+		//Check if Add Standard Indicator link is present on the page
+		exists= isElementPresent("Add Standard Indicator");
+		Assert.assertFalse(exists);
+	}	
+		//Function to check element is present on the page
+		public static boolean isElementPresent (String id)
+		{
+			boolean present;
+			if(driver.findElements(By.linkText(id)).size()!=0)
+			{
+			 present = true;
+			}
+			else
+			{
+			 present = false;
+			}
+		return present;
+		}
+	
+ @Test(priority = 22)
  public void closeBrowser() throws InterruptedException{
 	 
 	 Thread.sleep(2000);
