@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [Default suite]" allow-return-values="true">
+  <listeners>
+    <listener class-name="MyPackage.TestListener"/>
+  </listeners>
+  <test name="IntenalUser Test(failed)">
+    <classes>
+      <class name="MyPackage.CNAutoDemo">
+        <methods>
+          <include name="StdOutcomeIndicator"/>
+          <include name="Recording"/>
+          <include name="CNModuleBudget"/>
+          <include name="StdImpactIndicator"/>
+          <include name="VerificationOfOverviewPage"/>
+          <include name="StopRecording1"/>
+          <include name="ChangeSubmissionDate"/>
+        </methods>
+      </class> <!-- MyPackage.CNAutoDemo -->
+    </classes>
+  </test> <!-- IntenalUser Test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
