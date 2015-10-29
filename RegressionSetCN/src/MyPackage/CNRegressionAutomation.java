@@ -24,7 +24,7 @@ import jxl.Workbook;
 import jxl.read.biff.BiffException;
 
 public class CNRegressionAutomation extends CNBase {
-
+//login before checkout
 	@BeforeTest
 	public static void Recording() throws Exception{
 		VideoRecording.startRecording();
@@ -1207,7 +1207,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 
 	}
 
- @Test (priority = 1)
+ @Test (priority = 19)
 	
 	public void ChangeSubmissionDate() throws IOException, InterruptedException, BiffException {
 		
@@ -1224,6 +1224,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 		WebElement SubmissionDate = driver.findElement(By.id("CNoverview:frm:subDateList"));
 		SubmissionDate.click();
 		Select SubDatePick = new Select(SubmissionDate);
+		Thread.sleep(2000);
 		SubDatePick.selectByValue(DateVal);
 		Thread.sleep(2000);
 		WebElement SelLanguage = driver.findElement(By.id("CNoverview:frm:subLang"));
@@ -1239,7 +1240,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	}
 
 	
-	@Test  (priority = 2)
+	@Test  (priority = 20)
 	
 	public void UploadFile() throws BiffException, IOException, InterruptedException {
 		
@@ -1299,7 +1300,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
  
 //Verify CCM user is able to submit CN by clicking on Submit Concept Note button
 
-	@Test  (priority = 19)
+	@Test  (priority = 21)
 	public static void SubmitCN() throws BiffException, IOException, Exception  {
 		
 		Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1330,7 +1331,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 
 //Verify CCM user is not able to edit details after concept note is submitted.
 	
-	@Test  (priority = 20)
+	@Test  (priority = 22)
 	public static void CCMEditChk() throws BiffException, IOException, Exception  {
 		
 		Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1376,15 +1377,15 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	return present;
 	}
 
-	@Test  (priority = 0)
+	@Test  (priority = 23)
 	public static void CTLogin() throws BiffException, IOException, Exception  {
 		 
 	
 		System.setProperty("webdriver.chrome.driver", "properties/chromedriver.exe");
-		driver = new ChromeDriver();
+		//driver = new ChromeDriver();
 		//driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
+		//driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		//driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		Workbook wb = Workbook.getWorkbook(srcCNRegression);
 		int rowcount = wb.getSheet("CTLogin").getRows();
@@ -1414,7 +1415,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	}		
 	
 	//Verify CT can view Assess Likelihood button and able to click on pretty sure radio button for CN with status as "Submitted to Global Fund"
-		@Test  (priority = 1)
+		@Test  (priority = 24)
 		public static void CTPositiveAssessment() throws BiffException, IOException, Exception  {
 			
 			Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1430,12 +1431,16 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 			driver.findElement(By.linkText(data00)).click();
 			Thread.sleep(2000);
 			//Click on Submit Concept Note button
+			Thread.sleep(2000);
 			WebElement assess = driver.findElement(By.id("CNoverview:frm:CommandLinkAssess"));
+			Thread.sleep(2000);
 			HighlightElement.elementHighlight(assess);
 			Thread.sleep(2000);
 			assess.click();
+			Thread.sleep(2000);
 			//Click on pretty sure radio button
 			WebElement radio1= driver.findElement(By.id("CNoverview:frm:probNotRadio1:0"));
+			Thread.sleep(2000);
 			HighlightElement.elementHighlight(radio1);
 			Thread.sleep(2000);
 			radio1.click();
@@ -1449,7 +1454,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	
 	//CT is able to view the Final CT Review button and click it for CN with status as "Submitted to Global Fund"
 	
-			@Test  (priority = 3)
+			@Test  (priority = 25)
 			public static void FinalCTReview() throws BiffException, IOException, Exception  {
 	
 			Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1486,7 +1491,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	
 
 	//CT upload the final translated document- Translation Upload button for CN with status as "Reviewed and OK for TRP/GAC1"
-			@Test  (priority = 4)
+			@Test  (priority = 26)
 			public static void FinalTranslationReview() throws BiffException, IOException, Exception  {
 
 				Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1498,25 +1503,35 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 				//driver.findElement(By.linkText("Concept Note and Grantmaking")).click();
 				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);		
+				Thread.sleep(5000);
 				driver.findElement(By.linkText("Concept Notes")).click();
+				Thread.sleep(5000);
 				WebElement record=driver.findElement(By.linkText(data00));
+				Thread.sleep(5000);
 				HighlightElement.elementHighlight(record);
 				record.click();
+				Thread.sleep(5000);
 				//Click on Manage Documents Link
 				WebElement ManageDocs = driver.findElement(By.linkText("MANAGE DOCUMENTS"));
+				Thread.sleep(5000);
 				HighlightElement.elementHighlight(ManageDocs);
+				Thread.sleep(5000);
 				ManageDocs.click();
 				//Click on Final Translation Review button
 				WebElement FinalTranslationBtn = driver.findElement(By.id("Final Translation Review"));
+				Thread.sleep(5000);
 				HighlightElement.elementHighlight(FinalTranslationBtn);
+				Thread.sleep(5000);
 				FinalTranslationBtn.click();
 				//Click on Confirm button
 				WebElement ConfirmBtn = driver.findElement(By.xpath("//span[2]/a/strong"));
+				Thread.sleep(5000);
 				HighlightElement.elementHighlight(ConfirmBtn );
+				Thread.sleep(5000);
 				ConfirmBtn.click();
 			}
 
-			@Test  (priority = 21)
+			@Test  (priority = 27)
 			public static void CCMEditChkAfterCTReview() throws BiffException, IOException, Exception  {
 					
 				Workbook wb = Workbook.getWorkbook(srcCNRegression);
