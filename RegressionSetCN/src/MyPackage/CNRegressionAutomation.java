@@ -1376,7 +1376,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	return present;
 	}
 
-	@Test  (priority = 0)
+	@Test  (priority = 21)
 	public static void CTLogin() throws BiffException, IOException, Exception  {
 		 
 	
@@ -1411,10 +1411,43 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 			//Reporter.log("<a href=\"" + TakescreenShot + "\"><p align=\"left\">Login Sucessfully screenshot at " + new Date()+ "</p>");
 		}
 	
-	}		
+	}	
+	
+	//Verify CT user is able to edit the Concept note with status as "Submitted to Global Fund"
+	@Test  (priority = 22)
+	public static void CTEditChk() throws BiffException, IOException, Exception  {
+		
+		Workbook wb = Workbook.getWorkbook(srcCNRegression);
+		Record = wb.getSheet("CTEditRecord").getCell(0,1).getContents();
+		boolean exists;
+		//WebElement CN=driver.findElement(By.id("tsidLabel"));
+		//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		//CN.click();
+		//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		//driver.findElement(By.linkText("Concept Note and Grantmaking")).click();
+		//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);	
+		Thread.sleep(1000);
+		driver.findElement(By.linkText("Concept Notes")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.linkText(Record)).click();
+		//Click on GOALS & IMPACT INDICATORS link
+		WebElement impact = driver.findElement(By.linkText("GOALS & IMPACT INDICATORS"));
+		HighlightElement.elementHighlight(impact);
+		impact.click();
+		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);	
+		//Check if Add Goal link is present on the page
+		exists= isElementPresent("Add Goal");
+		Assert.assertTrue(exists);
+		//Check if Add Custom Indicator link is present on the page
+		exists= isElementPresent("Add Custom Indicator");
+		Assert.assertTrue(exists);
+		//Check if Add Standard Indicator link is present on the page
+		exists= isElementPresent("Add Standard Indicator");
+		Assert.assertTrue(exists);
+	}	
 	
 	//Verify CT can view Assess Likelihood button and able to click on pretty sure radio button for CN with status as "Submitted to Global Fund"
-		@Test  (priority = 1)
+		@Test  (priority = 23)
 		public static void CTPositiveAssessment() throws BiffException, IOException, Exception  {
 			
 			Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1449,7 +1482,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	
 	//CT is able to view the Final CT Review button and click it for CN with status as "Submitted to Global Fund"
 	
-			@Test  (priority = 3)
+			@Test  (priority = 24)
 			public static void FinalCTReview() throws BiffException, IOException, Exception  {
 	
 			Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1486,7 +1519,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	
 
 	//CT upload the final translated document- Translation Upload button for CN with status as "Reviewed and OK for TRP/GAC1"
-			@Test  (priority = 4)
+			@Test  (priority = 25)
 			public static void FinalTranslationReview() throws BiffException, IOException, Exception  {
 
 				Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1516,11 +1549,12 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 				ConfirmBtn.click();
 			}
 
-			@Test  (priority = 21)
+	//CCM user not able to edit concept note with status as "Reviewed and OK for TRP/GAC1"
+			@Test  (priority = 26)
 			public static void CCMEditChkAfterCTReview() throws BiffException, IOException, Exception  {
 					
 				Workbook wb = Workbook.getWorkbook(srcCNRegression);
-				Record = wb.getSheet("Record").getCell(0,1).getContents();
+				Record = wb.getSheet("FinalTranslationRecord").getCell(0,1).getContents();
 				boolean exists;
 				//WebElement CN=driver.findElement(By.id("tsidLabel"));
 				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
@@ -1547,7 +1581,70 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 				exists= isElementPresent("Add Standard Indicator");
 				Assert.assertFalse(exists);
 			}	
+		
+			
+	//Verify that the CCM is able to edit the CN having status as Iteration-not yet Submitted
+			@Test  (priority = 27)
+			public static void ItrNotSubmittedEditChk() throws BiffException, IOException, Exception  {
+					
+				Workbook wb = Workbook.getWorkbook(srcCNRegression);
+				Record = wb.getSheet("ItrNotYetSubmittedRecord").getCell(0,1).getContents();
+				boolean exists;
+				//WebElement CN=driver.findElement(By.id("tsidLabel"));
+				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+				//CN.click();
+				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+				//driver.findElement(By.linkText("Concept Note and Grantmaking")).click();
+				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);	
+				Thread.sleep(1000);
+				driver.findElement(By.linkText("Concept Notes")).click();
+				Thread.sleep(5000);
+				driver.findElement(By.linkText(Record)).click();
+				//Click on GOALS & IMPACT INDICATORS link
+				WebElement impact = driver.findElement(By.linkText("GOALS & IMPACT INDICATORS"));
+				HighlightElement.elementHighlight(impact);
+				impact.click();
+				driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);	
+				//Check if Add Goal link is present on the page
+				exists= isElementPresent("Add Goal");
+				Assert.assertTrue(exists);
+				//Check if Add Custom Indicator link is present on the page
+				exists= isElementPresent("Add Custom Indicator");
+				Assert.assertTrue(exists);
+				//Check if Add Standard Indicator link is present on the page
+				exists= isElementPresent("Add Standard Indicator");
+				Assert.assertTrue(exists);
+			}			
+	
+	//Verify that the CCM is able to Submit  the CN having status as Iteration-not yet Submitted
+			@Test  (priority = 28)
+			public static void SubmitItrCN() throws BiffException, IOException, Exception  {
 				
+				Workbook wb = Workbook.getWorkbook(srcCNRegression);
+				Record = wb.getSheet("ItrNotYetSubmittedRecord").getCell(0,1).getContents();
+				//WebElement CN=driver.findElement(By.id("tsidLabel"));
+				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+				//CN.click();
+				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+				//driver.findElement(By.linkText("Concept Note and Grantmaking")).click();
+				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);	
+				Thread.sleep(5000);
+				driver.findElement(By.linkText("Concept Notes")).click();
+				Thread.sleep(5000);
+				driver.findElement(By.linkText(Record)).click();
+				//Click on Submit Concept Note button
+				WebElement submit = driver.findElement(By.linkText("Submit Concept Note"));
+				Thread.sleep(1000);
+				HighlightElement.elementHighlight(submit);
+				Thread.sleep(2000);
+				submit.click();
+				//Click on yes button to confirm CN submission
+				WebElement confirm = driver.findElement(By.id("CNoverview:frm:j_id57"));
+				HighlightElement.elementHighlight(confirm);
+				Thread.sleep(2000);
+				confirm.click();
+
+			}
 }
 
 
