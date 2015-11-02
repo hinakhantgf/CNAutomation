@@ -129,7 +129,7 @@ public class CNRegressionAutomation extends CNBase {
 	    TRPButton.click();
 	    Thread.sleep(1000);
 	    new Select(driver.findElement(By.id("CNoverview:frm:subDateList"))).selectByVisibleText(TRPDate);
-	    Thread.sleep(2000);
+	    Thread.sleep(5000);
 	    new Select(driver.findElement(By.id("CNoverview:frm:subLang"))).selectByVisibleText(Langauge);
 	    Thread.sleep(1000);
 	    WebElement Save = driver.findElement(By.id("CNoverview:frm:j_id118"));
@@ -138,8 +138,67 @@ public class CNRegressionAutomation extends CNBase {
 	
 	    
 	  }
+ 
+//Verify CT can view Assess Likelihood button and able to click on pretty sure radio button for CN with status as "Submitted to Global Fund"
+		@Test  (priority = 3)
+		public static void CTPositiveAssessment() throws BiffException, IOException, Exception  {
+			
+			Workbook wb = Workbook.getWorkbook(srcCNRegression);
+			String data00= wb.getSheet("LikelihoodRecord").getCell(0,1).getContents();
+			int rowcount = wb.getSheet("CTLogin").getRows();
+			
+			for (i=1;i<rowcount;i++ ){
+				String UserName = wb.getSheet("CTLogin").getCell(0,i).getContents();
+				String PWD = wb.getSheet("CTLogin").getCell(1,i).getContents();
+				driver.get(baseUrl2);
+				//Enter username in login page
+				WebElement username = driver.findElement(By.id("username"));
+				HighlightElement.elementHighlight(username);
+				Thread.sleep(2000);
+				username.sendKeys(UserName);
+				//Enter password in login page
+				WebElement password = driver.findElement(By.id("password"));
+				HighlightElement.elementHighlight(password);
+				Thread.sleep(2000);
+				password.sendKeys(PWD);
+				WebElement Login= driver.findElement(By.id("Login"));
+				Login.click();
+				System.out.println("Login SuccessFully");
+				Thread.sleep(5000);
+			//WebElement CN=driver.findElement(By.id("tsidLabel"));
+			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+			//CN.click();
+			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+			//driver.findElement(By.linkText("Concept Note and Grantmaking")).click();
+			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);		
+			driver.findElement(By.linkText("Concept Notes")).click();
+			Thread.sleep(5000);
+			driver.findElement(By.linkText(data00)).click();
+			Thread.sleep(2000);
+			//Click on Submit Concept Note button
+			Thread.sleep(2000);
+			WebElement assess = driver.findElement(By.id("CNoverview:frm:CommandLinkAssess"));
+			Thread.sleep(2000);
+			HighlightElement.elementHighlight(assess);
+			Thread.sleep(2000);
+			assess.click();
+			Thread.sleep(2000);
+			//Click on pretty sure radio button
+			WebElement radio1= driver.findElement(By.id("CNoverview:frm:probNotRadio1:0"));
+			Thread.sleep(2000);
+			HighlightElement.elementHighlight(radio1);
+			Thread.sleep(2000);
+			radio1.click();
+			//Click on confirm button
+			WebElement confirm= driver.findElement(By.id("CNoverview:frm:j_id108"));
+			HighlightElement.elementHighlight(confirm);
+			Thread.sleep(2000);
+			confirm.click();
+		}
+						
+	}	
   
-  @Test (priority = 3)
+  @Test (priority = 4)
   public void AddNewPr() throws InterruptedException, Exception, Throwable {
 	  	
       Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -216,10 +275,27 @@ public class CNRegressionAutomation extends CNBase {
   } 
        
 
-  @Test (priority = 4)
+  @Test (priority = 5)
   public void AddModule() throws Exception {
 	  
 	     Workbook wb = Workbook.getWorkbook(srcCNRegression);
+	     driver.get(baseUrl1);
+		    int rowcount = wb.getSheet("Login").getRows();
+			
+			for (i=1;i<rowcount;i++ ){
+				String data00 = wb.getSheet("Login").getCell(0,i).getContents();
+				String data01 = wb.getSheet("Login").getCell(1,i).getContents();
+	            WebElement username = driver.findElement(By.id("username"));
+				username.sendKeys(data00);
+				HighlightElement.elementHighlight(username);
+				WebElement password = driver.findElement(By.id("password"));
+				password.sendKeys(data01);
+				HighlightElement.elementHighlight(password);
+				WebElement Login= driver.findElement(By.id("Login"));
+				HighlightElement.elementHighlight(Login);
+				Login.click();
+				System.out.println("Login SuccessFully");
+				Thread.sleep(5000);
 	     Thread.sleep(5000);
 	     //driver.findElement(By.linkText("Concept Notes")).click();
 	     //Thread.sleep(1000);
@@ -227,7 +303,7 @@ public class CNRegressionAutomation extends CNBase {
 	     //driver.findElement(By.linkText(Record)).click();
 	     //Thread.sleep(2000);
          ModuleLink = driver.findElement(By.linkText("MODULES & INTERVENTIONS"));
-         Thread.sleep(2000);
+         Thread.sleep(5000);
 		 //HighlightElement.elementHighlight(ModuleLink);
 		 ModuleLink.click();
 		 System.out.println(" Module link is open");
@@ -240,11 +316,12 @@ public class CNRegressionAutomation extends CNBase {
 		 driver.findElement(By.name("page:frm:j_id214")).click(); 
 		 Thread.sleep(3000);
 	
-    System.out.println("Module is added" );		
+    System.out.println("Module is added" );
+			}
     
    }
 
-  @Test  (priority =  5)
+  @Test  (priority =  6)
   public void AddIntervention() throws Exception {
 	      
 	      Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -280,7 +357,7 @@ public class CNRegressionAutomation extends CNBase {
 		  
       }
 
-  @Test (priority = 6)
+  @Test (priority = 7)
   public void AddPRintervention() throws Exception {
    
 	     Thread.sleep(5000);
@@ -296,7 +373,7 @@ public class CNRegressionAutomation extends CNBase {
    
        }		
   
-  @Test (priority = 7)
+  @Test (priority = 8)
   public void DeleteInterventionPR() throws Exception {
   	
 	     Thread.sleep(5000);
@@ -312,7 +389,7 @@ public class CNRegressionAutomation extends CNBase {
 		    
   }
 
-  @Test (priority = 8)
+  @Test (priority = 9)
   public void DeleteIntervention() throws Exception {
   	     
 	  
@@ -336,7 +413,7 @@ public class CNRegressionAutomation extends CNBase {
 		 
   }
   
-  @Test (priority = 9)
+  @Test (priority = 10)
   public void DeleteModule() throws Exception {
   
 		 Thread.sleep(5000);
@@ -352,7 +429,7 @@ public class CNRegressionAutomation extends CNBase {
   }	  
     
  
-  @Test (priority = 10)
+  @Test (priority = 11)
   public void deletePR() throws InterruptedException, BiffException, IOException{
 	    
 	  
@@ -376,7 +453,7 @@ public class CNRegressionAutomation extends CNBase {
 		 
  	  
      } 
-  @Test (priority= 11)
+  @Test (priority= 12)
 	
  	public void GoalCreation() throws InterruptedException, BiffException, IOException{
  		
@@ -405,7 +482,7 @@ public class CNRegressionAutomation extends CNBase {
  		 }
  		   }
   
-  @Test(priority=12)
+  @Test(priority=13)
 	
 	public void StdImpactIndicator() throws BiffException, IOException, InterruptedException {
 		
@@ -523,7 +600,7 @@ public class CNRegressionAutomation extends CNBase {
 			}
 	
    //Add a custom Impact indicator to the CN with status as not yet submitted
- @Test  (priority = 13)
+ @Test  (priority = 14)
  public static void CustomImpactInd() throws BiffException, IOException, Exception  {
 			
 		Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -651,7 +728,7 @@ public class CNRegressionAutomation extends CNBase {
 		save.click();
 	}
 
-  @Test (priority = 14)
+  @Test (priority = 15)
 	
 	public void ObjectiveCreation() throws InterruptedException, BiffException, IOException{
 		
@@ -681,7 +758,7 @@ public class CNRegressionAutomation extends CNBase {
 		   }
 		 }			
 
-  @Test  (priority = 15)
+  @Test  (priority = 16)
 	
 	public void StdOutcomeIndicator() throws InterruptedException, BiffException, IOException {
 		
@@ -791,7 +868,7 @@ public class CNRegressionAutomation extends CNBase {
 			}
   
 //Add a custom Outcome indicator to the CN with status as not yet submitted
- @Test  (priority = 16)
+ @Test  (priority = 17)
  public static void CustomOutcomeInd() throws BiffException, IOException, Exception  {
 			
 	Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -931,7 +1008,7 @@ public class CNRegressionAutomation extends CNBase {
  
 
 	//Add a custom Output indicator to the CN with status as not yet submitted
-@Test  (priority = 17)
+@Test  (priority = 18)
 public static void CustomeCoverageOutput() throws BiffException, IOException, Exception  {
 				
 		Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1100,7 +1177,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	}
 
 //Add Module Budget to the CN with status as not yet submitted
- @Test  (priority = 18)
+ @Test  (priority = 19)
  public static void CNModuleBudget() throws BiffException, IOException, Exception  {
 			
 	Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1128,8 +1205,10 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	Thread.sleep(5000);
 	driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 	module.click();
+	Thread.sleep(2000);
 	//Click on Enter description button
 	WebElement enter =driver.findElement(By.id("page:frm:rptrCNI:0:btnEnterDesc"));
+	Thread.sleep(2000);
 	HighlightElement.elementHighlight(enter);
 	Thread.sleep(5000);
 	enter.click();
@@ -1207,7 +1286,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 
 	}
 
- @Test (priority = 19)
+ @Test (priority = 20)
 	
 	public void ChangeSubmissionDate() throws IOException, InterruptedException, BiffException {
 		
@@ -1240,7 +1319,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	}
 
 	
-	@Test  (priority = 20)
+	@Test  (priority = 21)
 	
 	public void UploadFile() throws BiffException, IOException, InterruptedException {
 		
@@ -1254,8 +1333,8 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 		Record = wb.getSheet("Record").getCell(0,1).getContents();
 		Thread.sleep(5000); 
 		RecordLink = driver.findElement(By.linkText(Record));
-		Thread.sleep(1000);
 		HighlightElement.elementHighlight(RecordLink);
+		Thread.sleep(5000); 
 		RecordLink.click();
 		Thread.sleep(2000);
 		driver.findElement(By.linkText("MANAGE DOCUMENTS")).click();
@@ -1300,7 +1379,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
  
 //Verify CCM user is able to submit CN by clicking on Submit Concept Note button
 
-	@Test  (priority = 21)
+	@Test  (priority = 22)
 	public static void SubmitCN() throws BiffException, IOException, Exception  {
 		
 		Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1310,8 +1389,6 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 		//CN.click();
 		//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		//driver.findElement(By.linkText("Concept Note and Grantmaking")).click();
-		//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);	
-		Thread.sleep(5000);
 		driver.findElement(By.linkText("Concept Notes")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.linkText(Record)).click();
@@ -1331,7 +1408,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 
 //Verify CCM user is not able to edit details after concept note is submitted.
 	
-	@Test  (priority = 22)
+	@Test  (priority = 23)
 	public static void CCMEditChk() throws BiffException, IOException, Exception  {
 		
 		Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1377,7 +1454,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	return present;
 	}
 
-	@Test  (priority = 23)
+	@Test  (priority = 24)
 	public static void CTLogin() throws BiffException, IOException, Exception  {
 		 
 	
@@ -1414,43 +1491,6 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	
 	}		
 	
-	//Verify CT can view Assess Likelihood button and able to click on pretty sure radio button for CN with status as "Submitted to Global Fund"
-		@Test  (priority = 24)
-		public static void CTPositiveAssessment() throws BiffException, IOException, Exception  {
-			
-			Workbook wb = Workbook.getWorkbook(srcCNRegression);
-			String data00= wb.getSheet("LikelihoodRecord").getCell(0,1).getContents();
-			//WebElement CN=driver.findElement(By.id("tsidLabel"));
-			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-			//CN.click();
-			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-			//driver.findElement(By.linkText("Concept Note and Grantmaking")).click();
-			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);		
-			driver.findElement(By.linkText("Concept Notes")).click();
-			Thread.sleep(5000);
-			driver.findElement(By.linkText(data00)).click();
-			Thread.sleep(2000);
-			//Click on Submit Concept Note button
-			Thread.sleep(2000);
-			WebElement assess = driver.findElement(By.id("CNoverview:frm:CommandLinkAssess"));
-			Thread.sleep(2000);
-			HighlightElement.elementHighlight(assess);
-			Thread.sleep(2000);
-			assess.click();
-			Thread.sleep(2000);
-			//Click on pretty sure radio button
-			WebElement radio1= driver.findElement(By.id("CNoverview:frm:probNotRadio1:0"));
-			Thread.sleep(2000);
-			HighlightElement.elementHighlight(radio1);
-			Thread.sleep(2000);
-			radio1.click();
-			//Click on confirm button
-			WebElement confirm= driver.findElement(By.id("CNoverview:frm:j_id108"));
-			HighlightElement.elementHighlight(confirm);
-			Thread.sleep(2000);
-			confirm.click();
-		}
-						
 	
 	//CT is able to view the Final CT Review button and click it for CN with status as "Submitted to Global Fund"
 	
@@ -1458,7 +1498,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 			public static void FinalCTReview() throws BiffException, IOException, Exception  {
 	
 			Workbook wb = Workbook.getWorkbook(srcCNRegression);
-			String data00= wb.getSheet("CTReviewRecord").getCell(0,1).getContents();
+			String Record= wb.getSheet("CTReviewRecord").getCell(0,1).getContents();
 
 			//WebElement CN=driver.findElement(By.id("tsidLabel"));
 			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
@@ -1467,26 +1507,39 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 			//driver.findElement(By.linkText("Concept Note and Grantmaking")).click();
 			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);		
 			driver.findElement(By.linkText("Concept Notes")).click();
-			WebElement record=driver.findElement(By.linkText(data00));
+			WebElement record=driver.findElement(By.linkText(Record));
+			Thread.sleep(2000);
 			HighlightElement.elementHighlight(record);
+			Thread.sleep(2000);
 			record.click();
 			//Click on Final CT Review button
 			WebElement FinalReview = driver.findElement(By.linkText("Final CT Review"));
+			Thread.sleep(2000);
 			HighlightElement.elementHighlight(FinalReview);
+			Thread.sleep(2000);
 			FinalReview.click();
+			Thread.sleep(2000);
 			//Click on the checkbox to confirm the review process
 			WebElement ChkBox = driver.findElement(By.id("CNoverview:frm:checkBox"));
+			Thread.sleep(2000);
 			HighlightElement.elementHighlight(ChkBox);
+			Thread.sleep(2000);
 			ChkBox.click();
 			//Click on Final CT Review button
 			WebElement FinalCTReviewBtn = driver.findElement(By.id("CNoverview:frm:finishCTR"));
+			Thread.sleep(2000);
 			HighlightElement.elementHighlight(FinalCTReviewBtn);
+			Thread.sleep(2000);
 			FinalCTReviewBtn.click();
+			Thread.sleep(2000);
 			//Click on Confirm button
 			WebElement ConfirmBtn =	driver.findElement(By.name("CNoverview:frm:j_id89"));
+			Thread.sleep(2000);
 			HighlightElement.elementHighlight(ConfirmBtn);
+			Thread.sleep(2000);
 			ConfirmBtn.click();
-			}
+			Thread.sleep(2000);
+	}
 
 	
 
@@ -1503,7 +1556,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 				//driver.findElement(By.linkText("Concept Note and Grantmaking")).click();
 				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);		
-				Thread.sleep(5000);
+				Thread.sleep(6000);
 				driver.findElement(By.linkText("Concept Notes")).click();
 				Thread.sleep(5000);
 				WebElement record=driver.findElement(By.linkText(data00));
@@ -1535,6 +1588,23 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 			public static void CCMEditChkAfterCTReview() throws BiffException, IOException, Exception  {
 					
 				Workbook wb = Workbook.getWorkbook(srcCNRegression);
+				driver.get(baseUrl1);
+			    int rowcount = wb.getSheet("Login").getRows();
+				
+				for (i=1;i<rowcount;i++ ){
+					String data00 = wb.getSheet("Login").getCell(0,i).getContents();
+					String data01 = wb.getSheet("Login").getCell(1,i).getContents();
+		            WebElement username = driver.findElement(By.id("username"));
+					username.sendKeys(data00);
+					HighlightElement.elementHighlight(username);
+					WebElement password = driver.findElement(By.id("password"));
+					password.sendKeys(data01);
+					HighlightElement.elementHighlight(password);
+					WebElement Login= driver.findElement(By.id("Login"));
+					HighlightElement.elementHighlight(Login);
+					Login.click();
+					System.out.println("Login SuccessFully");
+					Thread.sleep(5000);
 				Record = wb.getSheet("Record").getCell(0,1).getContents();
 				boolean exists;
 				//WebElement CN=driver.findElement(By.id("tsidLabel"));
@@ -1565,7 +1635,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 				
 }
 
-
+}
 	
 	
 
