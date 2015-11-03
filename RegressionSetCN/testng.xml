@@ -5,9 +5,9 @@
   <listeners>
 		<listener class-name="MyPackage.TestListener" />
 	</listeners>
-  <test name="IntenalUser Test">
+  <test name="Test">
    <classes>
-   <class name="MyPackage.CNAutoDemo">
+   <class name="MyPackage.CNRegressionAutomation">
       <methods>
         <include name="Login" />
         <include name="VerificationOfOverviewPage" />
@@ -15,14 +15,8 @@
         <include name="AddModule" />
         <include name="AddIntervention" />
         <include name="AddPRintervention" />
-        <include name="DeleteInterventionPR" />
-        <include name="DeleteIntervention" />
-        <include name="DeleteModule" />
-        <exclude name="deletePR" />
-        <include name="AddModule" />
-        <include name="AddIntervention" />
-        <include name="AddPRintervention" />
         <include name="TRPDateRegister" />
+        <include name="CTPositiveAssessment" />
         <include name="GoalCreation" />
         <include name="StdImpactIndicator" />
         <include name="ObjectiveCreation" />
@@ -33,10 +27,25 @@
         <include name="ChangeSubmissionDate" />
         <include name="UploadFile" />  
         <include name="SubmitCN" />
-        
+         <include name="CTLogin" />
+        <include name="FinalCTReview" />
+        <include name="FinalTranslationReview" />
+        <include name="CCMEditChkAfterCTReview" />
                  
          </methods>
       </class>
     </classes>
   </test> <!-- Test -->
+   <test name="Test A2F">
+   <classes>
+   <class name="MyPackage.A2FUSer">
+      <methods>
+        <include name="Login" />
+        <include name="IterationScenarios" />
+       </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  
 </suite> <!-- Suite -->
