@@ -165,6 +165,7 @@ public class CNRegressionAutomation extends CNBase {
 				Login.click();
 				System.out.println("Login SuccessFully");
 				Thread.sleep(5000);
+			}
 			//WebElement CN=driver.findElement(By.id("tsidLabel"));
 			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 			//CN.click();
@@ -196,7 +197,7 @@ public class CNRegressionAutomation extends CNBase {
 			confirm.click();
 		}
 						
-	}	
+	
   
   @Test (priority = 4)
   public void AddNewPr() throws InterruptedException, Exception, Throwable {
@@ -206,7 +207,6 @@ public class CNRegressionAutomation extends CNBase {
       Thread.sleep(15000);
 	  driver.findElement(By.linkText(Record)).click();	
 	  Thread.sleep(15000);
-      int rowcount = wb.getSheet("Principal Recipients").getRows();
       /*
      if(!driver.findElement(By.id("tsidLabel")).getText().equalsIgnoreCase("Concept Note and Grantmaking")) {
  		 driver.findElement(By.id("tsidLabel")).click(); 
@@ -272,7 +272,8 @@ public class CNRegressionAutomation extends CNBase {
 						
          }
           
-  } 
+      }
+  
        
 
   @Test (priority = 5)
@@ -296,6 +297,7 @@ public class CNRegressionAutomation extends CNBase {
 				Login.click();
 				System.out.println("Login SuccessFully");
 				Thread.sleep(5000);
+			}
 	     Thread.sleep(5000);
 	     //driver.findElement(By.linkText("Concept Notes")).click();
 	     //Thread.sleep(1000);
@@ -319,7 +321,7 @@ public class CNRegressionAutomation extends CNBase {
     System.out.println("Module is added" );
 			}
     
-   }
+   
 
   @Test  (priority =  6)
   public void AddIntervention() throws Exception {
@@ -1286,7 +1288,6 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 
 	}
 
-
  @Test (priority = 20)
 
 	
@@ -1321,10 +1322,8 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	}
 
 	
-
 	@Test  (priority = 21)
 
-	
 	public void UploadFile() throws BiffException, IOException, InterruptedException {
 		
 		int j;
@@ -1383,7 +1382,6 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
  
 //Verify CCM user is able to submit CN by clicking on Submit Concept Note button
 
-
 	@Test  (priority = 22)
 
 	public static void SubmitCN() throws BiffException, IOException, Exception  {
@@ -1416,7 +1414,6 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	
 
 	@Test  (priority = 23)
-
 	public static void CCMEditChk() throws BiffException, IOException, Exception  {
 		
 		Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1464,13 +1461,8 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 
 
 	@Test  (priority = 24)
-
 	public static void CTLogin() throws BiffException, IOException, Exception  {
-		 
-			//System.setProperty("webdriver.chrome.driver", "properties/chromedriver.exe");
-
-		System.setProperty("webdriver.chrome.driver", "properties/chromedriver.exe");
-
+	//System.setProperty("webdriver.chrome.driver", "properties/chromedriver.exe");
 		//driver = new ChromeDriver();
 		//driver = new FirefoxDriver();
 		//driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -1503,6 +1495,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	
 	}	
 	
+
 	//Verify CT user is able to edit the Concept note with status as "Submitted to Global Fund"
 	@Test  (priority = 23)
 	public static void CTEditChk() throws BiffException, IOException, Exception  {
@@ -1535,8 +1528,6 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 		exists= isElementPresent("Add Standard Indicator");
 		Assert.assertTrue(exists);
 	}	
-	
-
 	
 	//CT is able to view the Final CT Review button and click it for CN with status as "Submitted to Global Fund"
 	
@@ -1587,7 +1578,6 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 			Thread.sleep(2000);
 	}
 
-	
 
 	//CT upload the final translated document- Translation Upload button for CN with status as "Reviewed and OK for TRP/GAC1"
 			@Test  (priority = 26)
@@ -1630,16 +1620,13 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 				ConfirmBtn.click();
 			}
 
-
-	//CCM user not able to edit concept note with status as "Reviewed and OK for TRP/GAC1"
+//CCM user not able to edit concept note with status as "Reviewed and OK for TRP/GAC1"
 
 			@Test  (priority = 27)
 			public static void CCMEditChkAfterCTReview() throws BiffException, IOException, Exception  {
 					
 				Workbook wb = Workbook.getWorkbook(srcCNRegression);
-
 				Record = wb.getSheet("FinalTranslationRecord").getCell(0,1).getContents();
-
 				driver.get(baseUrl1);
 			    int rowcount = wb.getSheet("Login").getRows();
 				
@@ -1657,6 +1644,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 					Login.click();
 					System.out.println("Login SuccessFully");
 					Thread.sleep(5000);
+				}
 				Record = wb.getSheet("Record").getCell(0,1).getContents();
 
 				boolean exists;
@@ -1685,59 +1673,56 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 				exists= isElementPresent("Add Standard Indicator");
 				Assert.assertFalse(exists);
 			}	
-			}
-			
-			@Test  (priority = 28)
-			public static void IterationScenarios() throws BiffException, IOException, Exception  {
+				
+		@Test  (priority = 28)
+		public static void IterationScenarios() throws BiffException, IOException, Exception  {
 
-				Workbook wb = Workbook.getWorkbook(srcCNRegression);
-				baseUrl3 =  wb.getSheet("A2FLogindetails").getCell(2,1).getContents();
-				driver.get(baseUrl3);
-					String data00 = wb.getSheet("A2FLogindetails").getCell(0,i).getContents();
-					String data01 = wb.getSheet("A2FLogindetails").getCell(1,i).getContents();
-		            WebElement username = driver.findElement(By.id("username"));
-					username.sendKeys(data00);
-					HighlightElement.elementHighlight(username);
-					WebElement password = driver.findElement(By.id("password"));
-					password.sendKeys(data01);
-					HighlightElement.elementHighlight(password);
-					WebElement Login= driver.findElement(By.id("Login"));
-					HighlightElement.elementHighlight(Login);
-					Login.click();
-					System.out.println("Login SuccessFully");
-					Thread.sleep(5000);
-				DecisiononConceptNote = wb.getSheet("A2FDetails").getCell(0,i).getContents();
-				GACConfirmationofTRPDecision = wb.getSheet("A2FDetails").getCell(1,i).getContents();
-				Status =  wb.getSheet("A2FDetails").getCell(2,i).getContents();
-				rowcount = wb.getSheet("A2FDetails").getRows();
-				Thread.sleep(2000);
-				for(i=1; i<=rowcount; i++){
-					WebElement Edit = driver.findElement(By.name("edit"));
-					Thread.sleep(2000);
-					HighlightElement.elementHighlight(Edit);
-					Thread.sleep(2000);
-					Edit.click();
-					Thread.sleep(2000);
-					WebElement DecisionDropDown = driver.findElement(By.id("00Nb0000009YlMI"));
-				    DecisionDropDown.click();
-				    Thread.sleep(2000);
-				    Select DDD=new Select(DecisionDropDown);
-				    Thread.sleep(2000);
-				    DDD.selectByVisibleText(DecisiononConceptNote);
-				    Thread.sleep(2000);
-				    WebElement GACConfirmationDropDown = driver.findElement(By.id("00Nb0000009YlMR"));
-				    GACConfirmationDropDown.click();
-				    Select GACYN=new Select(GACConfirmationDropDown);
-				    Thread.sleep(2000);
-				    GACYN.selectByValue(GACConfirmationofTRPDecision);
-				    Thread.sleep(2000);
-				    driver.findElement(By.name("save")).click();
-				    Thread.sleep(2000);
-				    Assert.assertEquals(Status, driver.findElement(By.id("00Nb0000002BSIS_ilecell")).getText());
+		Workbook wb = Workbook.getWorkbook(srcCNRegression);
+		baseUrl3 =  wb.getSheet("A2FLogindetails").getCell(2,1).getContents();
+		driver.get(baseUrl3);
+		String data00 = wb.getSheet("A2FLogindetails").getCell(0,i).getContents();
+		String data01 = wb.getSheet("A2FLogindetails").getCell(1,i).getContents();
+		WebElement username = driver.findElement(By.id("username"));
+		username.sendKeys(data00);
+		HighlightElement.elementHighlight(username);
+		WebElement password = driver.findElement(By.id("password"));
+		password.sendKeys(data01);
+		HighlightElement.elementHighlight(password);
+		WebElement Login= driver.findElement(By.id("Login"));
+		HighlightElement.elementHighlight(Login);
+		Login.click();
+		System.out.println("Login SuccessFully");
+		Thread.sleep(5000);
+		DecisiononConceptNote = wb.getSheet("A2FDetails").getCell(0,i).getContents();
+	    GACConfirmationofTRPDecision = wb.getSheet("A2FDetails").getCell(1,i).getContents();
+	    Status =  wb.getSheet("A2FDetails").getCell(2,i).getContents();
+		rowcount = wb.getSheet("A2FDetails").getRows();
+		Thread.sleep(2000);
+		for(i=1; i<=rowcount; i++){
+			WebElement Edit = driver.findElement(By.name("edit"));
+			Thread.sleep(2000);
+			HighlightElement.elementHighlight(Edit);
+			Thread.sleep(2000);
+			Edit.click();
+			Thread.sleep(2000);
+			WebElement DecisionDropDown = driver.findElement(By.id("00Nb0000009YlMI"));
+			DecisionDropDown.click();
+			Thread.sleep(2000);
+			Select DDD=new Select(DecisionDropDown);
+			Thread.sleep(2000);
+			DDD.selectByVisibleText(DecisiononConceptNote);
+		    Thread.sleep(2000);
+			WebElement GACConfirmationDropDown = driver.findElement(By.id("00Nb0000009YlMR"));
+			GACConfirmationDropDown.click();
+			Select GACYN=new Select(GACConfirmationDropDown);
+			Thread.sleep(2000);
+			GACYN.selectByValue(GACConfirmationofTRPDecision);
+		    Thread.sleep(2000);
+			driver.findElement(By.name("save")).click();
+			Thread.sleep(2000);
+		    Assert.assertEquals(Status, driver.findElement(By.id("00Nb0000002BSIS_ilecell")).getText());
 			}
 		}
-		
-				
 			
 	//Verify that the CCM is able to edit the CN having status as Iteration-not yet Submitted
 			@Test  (priority = 29)
@@ -1803,10 +1788,3 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 			}
 
 }
-			
-
-
-
-	
-	
-
