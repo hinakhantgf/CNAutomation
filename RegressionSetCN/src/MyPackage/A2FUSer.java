@@ -45,12 +45,13 @@ public class A2FUSer extends CNBase {
 		driver.manage().window().maximize();
 		Workbook wb = Workbook.getWorkbook(srcCNRegression);
 		driver.manage().deleteAllCookies();
-		driver.get(baseUrl2);
-	    int rowcount = wb.getSheet("A2FLogin").getRows();
+		baseUrl3 =  wb.getSheet("A2FLogindetails").getCell(2,1).getContents();
+		driver.get(baseUrl3);
+	    int rowcount = wb.getSheet("A2FLogindetails").getRows();
 		
 		for (i=1;i<rowcount;i++ ){
-			String data00 = wb.getSheet("A2FLogin").getCell(0,i).getContents();
-			String data01 = wb.getSheet("A2FLogin").getCell(1,i).getContents();
+			String data00 = wb.getSheet("A2FLogindetails").getCell(0,i).getContents();
+			String data01 = wb.getSheet("A2FLogindetails").getCell(1,i).getContents();
             WebElement username = driver.findElement(By.id("username"));
 			username.sendKeys(data00);
 			HighlightElement.elementHighlight(username);
@@ -68,17 +69,59 @@ public class A2FUSer extends CNBase {
 	}
 	
 	@Test  (priority = 1)
-	public static void ClickAllTabs() throws BiffException, IOException, Exception  {
-		//Click on All Tabs "+" sign
-		WebElement AllTabs = driver.findElement(By.cssSelector("img.allTabsArrow"));
-		Thread.sleep(1000);
-		HighlightElement.elementHighlight(AllTabs);
-		Thread.sleep(1000);
+	public static void IterationYes() throws BiffException, IOException, Exception  {
 		
-		
-	}
-		
+		Workbook wb = Workbook.getWorkbook(srcCNRegression);
+		DecisiononConceptNote = wb.getSheet("A2FDetails").getCell(0,1).getContents();
+		GACConfirmationofTRPDecision = wb.getSheet("A2FDetails").getCell(1,1).getContents();
+		Status =  wb.getSheet("A2FDetails").getCell(2,1).getContents();
+		Thread.sleep(2000);
+		WebElement Edit = driver.findElement(By.name("edit"));
+		Thread.sleep(2000);
+		HighlightElement.elementHighlight(Edit);
+		Thread.sleep(2000);
+		Edit.click();
+		Thread.sleep(2000);
+		WebElement DecisionDropDown = driver.findElement(By.id("00Nb0000009YlMI"));
+	    DecisionDropDown.click();
+	    Thread.sleep(2000);
+	    Select DDD=new Select(DecisionDropDown);
+	    Thread.sleep(2000);
+	    DDD.selectByVisibleText(DecisiononConceptNote);
+	    Thread.sleep(2000);
+	    WebElement GACConfirmationDropDown = driver.findElement(By.id("00Nb0000009YlMR"));
+	    GACConfirmationDropDown.click();
+	    Select GACYN=new Select(GACConfirmationDropDown);
+	    Thread.sleep(2000);
+	    GACYN.selectByValue(GACConfirmationofTRPDecision);
+	    Thread.sleep(2000);
+	    driver.findElement(By.name("save")).click();
+	    Thread.sleep(2000);
+	    Assert.assertEquals(Status, driver.findElement(By.id("00Nb0000002BSIS_ilecell")).getText());
+	  }
+		/*
 	@Test  (priority = 2)
-	public static void ClickConceptNoteTab() throws BiffException, IOException, Exception  {
+	public static void IterationNo() throws BiffException, IOException, Exception  {
+		
+		Workbook wb = Workbook.getWorkbook(srcCNRegression);
+		DecisiononConceptNote = wb.getSheet("A2FDetails").getCell(0,2).getContents();
+		GACConfirmationofTRPDecision = wb.getSheet("A2FDetails").getCell(1,2).getContents();
+		Status =  wb.getSheet("A2FDetails").getCell(2,2).getContents();
+		Edit = driver.findElement(By.name("edit"));
+		Thread.sleep(2000);
+		HighlightElement.elementHighlight(Edit);
+		Thread.sleep(2000);
+		Edit.click();
+		Thread.sleep(2000);
+	    DecisionDropDown = driver.findElement(By.id("00Nb0000009YlMI"));
+	    Select DDD=new Select(DecisionDropDown);
+	    DDD.selectByVisibleText(DecisiononConceptNote);
+	    GACConfirmationDropDown = driver.findElement(By.id("00Nb0000009YlMR"));
+	    Select GACYN=new Select(DecisionDropDown);
+	    GACYN.selectByVisibleText(GACConfirmationofTRPDecision);
+	    driver.findElement(By.name("save")).click();
+	    Thread.sleep(2000);
+	    Assert.assertEquals(Status, driver.findElement(By.id("00Nb0000002BSIS_ilecell")).getText());
+	  } */
 	}
-}
+		
