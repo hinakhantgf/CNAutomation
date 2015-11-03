@@ -7,7 +7,7 @@
 	</listeners>
   <test name="IntenalUser Test">
    <classes>
-   <class name="MyPackage.CNAutoDemo">
+   <class name="MyPackage.CNRegressionAutomation">
       <methods>
         <include name="Login" />
         <include name="VerificationOfOverviewPage" />
@@ -33,8 +33,16 @@
         <include name="ChangeSubmissionDate" />
         <include name="UploadFile" />  
         <include name="SubmitCN" />
-        
-                 
+        <include name="CCMEditChk"/>
+        <include name="CTLogin"/>
+        <include name="CTEditChk"/>
+        <include name="CTPositiveAssessment"/>
+        <include name="FinalCTReview"/>
+        <include name="FinalTranslationReview"/>
+        <include name="CCMEditChkAfterCTReview"/>
+        <include name="ItrNotSubmittedEditChk"/>
+        <include name="SubmitItrCN"/>
+                
          </methods>
       </class>
     </classes>

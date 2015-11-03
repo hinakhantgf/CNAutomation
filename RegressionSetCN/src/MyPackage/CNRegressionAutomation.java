@@ -1581,6 +1581,56 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 				exists= isElementPresent("Add Standard Indicator");
 				Assert.assertFalse(exists);
 			}	
+			
+			@Test  (priority = 1)
+			public static void IterationScenarios() throws BiffException, IOException, Exception  {
+
+				Workbook wb = Workbook.getWorkbook(srcCNRegression);
+				baseUrl3 =  wb.getSheet("A2FLogindetails").getCell(2,1).getContents();
+				driver.get(baseUrl3);
+					String data00 = wb.getSheet("A2FLogindetails").getCell(0,i).getContents();
+					String data01 = wb.getSheet("A2FLogindetails").getCell(1,i).getContents();
+		            WebElement username = driver.findElement(By.id("username"));
+					username.sendKeys(data00);
+					HighlightElement.elementHighlight(username);
+					WebElement password = driver.findElement(By.id("password"));
+					password.sendKeys(data01);
+					HighlightElement.elementHighlight(password);
+					WebElement Login= driver.findElement(By.id("Login"));
+					HighlightElement.elementHighlight(Login);
+					Login.click();
+					System.out.println("Login SuccessFully");
+					Thread.sleep(5000);
+				DecisiononConceptNote = wb.getSheet("A2FDetails").getCell(0,i).getContents();
+				GACConfirmationofTRPDecision = wb.getSheet("A2FDetails").getCell(1,i).getContents();
+				Status =  wb.getSheet("A2FDetails").getCell(2,i).getContents();
+				rowcount = wb.getSheet("A2FDetails").getRows();
+				Thread.sleep(2000);
+				for(i=1; i<=rowcount; i++){
+					WebElement Edit = driver.findElement(By.name("edit"));
+					Thread.sleep(2000);
+					HighlightElement.elementHighlight(Edit);
+					Thread.sleep(2000);
+					Edit.click();
+					Thread.sleep(2000);
+					WebElement DecisionDropDown = driver.findElement(By.id("00Nb0000009YlMI"));
+				    DecisionDropDown.click();
+				    Thread.sleep(2000);
+				    Select DDD=new Select(DecisionDropDown);
+				    Thread.sleep(2000);
+				    DDD.selectByVisibleText(DecisiononConceptNote);
+				    Thread.sleep(2000);
+				    WebElement GACConfirmationDropDown = driver.findElement(By.id("00Nb0000009YlMR"));
+				    GACConfirmationDropDown.click();
+				    Select GACYN=new Select(GACConfirmationDropDown);
+				    Thread.sleep(2000);
+				    GACYN.selectByValue(GACConfirmationofTRPDecision);
+				    Thread.sleep(2000);
+				    driver.findElement(By.name("save")).click();
+				    Thread.sleep(2000);
+				    Assert.assertEquals(Status, driver.findElement(By.id("00Nb0000002BSIS_ilecell")).getText());
+			}
+		}
 		
 			
 	//Verify that the CCM is able to edit the CN having status as Iteration-not yet Submitted
