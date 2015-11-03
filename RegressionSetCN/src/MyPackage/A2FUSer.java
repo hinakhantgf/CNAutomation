@@ -69,9 +69,12 @@ public class A2FUSer extends CNBase {
 	}
 	
 	@Test  (priority = 1)
-	public static void IterationYes() throws BiffException, IOException, Exception  {
+
+	public static void IterationScenarios() throws BiffException, IOException, Exception  {
+
 		
 		Workbook wb = Workbook.getWorkbook(srcCNRegression);
+
 		DecisiononConceptNote = wb.getSheet("A2FDetails").getCell(0,1).getContents();
 		GACConfirmationofTRPDecision = wb.getSheet("A2FDetails").getCell(1,1).getContents();
 		Status =  wb.getSheet("A2FDetails").getCell(2,1).getContents();
@@ -98,6 +101,9 @@ public class A2FUSer extends CNBase {
 	    driver.findElement(By.name("save")).click();
 	    Thread.sleep(2000);
 	    Assert.assertEquals(Status, driver.findElement(By.id("00Nb0000002BSIS_ilecell")).getText());
+
+		
+
 	  }
 		/*
 	@Test  (priority = 2)

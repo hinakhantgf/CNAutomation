@@ -19,12 +19,16 @@ public class CNBase {
 	static WebDriver driver;
 	static String baseUrl1 = "https://sit-theglobalfund.cs41.force.com/GM/apex/OpenConceptNotesH" ;
 	static String baseUrl2 = "https://test.salesforce.com";
+
 	static String baseUrl3 = "https://test.salesforce.com";
+
+
 	static int i;
 	static String Record;
 	WebElement RecordLink;
 	WebElement ModuleLink;
-	WebElement GoalsImpactIndicator; 
+	WebElement GoalsImpactIndicator;
+	static WebElement Edit;
 	static String Goaltitle;
 	static String Objectivetitle;
 	static int rowcount;
@@ -34,7 +38,9 @@ public class CNBase {
 	static String GACConfirmationofTRPDecision;
 	static String Status;
 
+
 	
+
 	
 	
 	
