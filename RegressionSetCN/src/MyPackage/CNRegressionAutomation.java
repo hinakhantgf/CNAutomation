@@ -1207,7 +1207,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 
 	}
 
- @Test (priority = 1)
+ @Test (priority = 19)
 	
 	public void ChangeSubmissionDate() throws IOException, InterruptedException, BiffException {
 		
@@ -1239,7 +1239,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	}
 
 	
-	@Test  (priority = 2)
+	@Test  (priority = 20)
 	
 	public void UploadFile() throws BiffException, IOException, InterruptedException {
 		
@@ -1299,7 +1299,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
  
 //Verify CCM user is able to submit CN by clicking on Submit Concept Note button
 
-	@Test  (priority = 19)
+	@Test  (priority = 21)
 	public static void SubmitCN() throws BiffException, IOException, Exception  {
 		
 		Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1330,7 +1330,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 
 //Verify CCM user is not able to edit details after concept note is submitted.
 	
-	@Test  (priority = 20)
+	@Test  (priority = 22)
 	public static void CCMEditChk() throws BiffException, IOException, Exception  {
 		
 		Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1376,12 +1376,12 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	return present;
 	}
 
-	@Test  (priority = 21)
+	@Test  (priority = 22)
 	public static void CTLogin() throws BiffException, IOException, Exception  {
 		 
 	
-		System.setProperty("webdriver.chrome.driver", "properties/chromedriver.exe");
-		driver = new ChromeDriver();
+		//System.setProperty("webdriver.chrome.driver", "properties/chromedriver.exe");
+		//driver = new ChromeDriver();
 		//driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
@@ -1414,7 +1414,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	}	
 	
 	//Verify CT user is able to edit the Concept note with status as "Submitted to Global Fund"
-	@Test  (priority = 22)
+	@Test  (priority = 23)
 	public static void CTEditChk() throws BiffException, IOException, Exception  {
 		
 		Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1447,7 +1447,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	}	
 	
 	//Verify CT can view Assess Likelihood button and able to click on pretty sure radio button for CN with status as "Submitted to Global Fund"
-		@Test  (priority = 23)
+		@Test  (priority = 24)
 		public static void CTPositiveAssessment() throws BiffException, IOException, Exception  {
 			
 			Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1482,7 +1482,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	
 	//CT is able to view the Final CT Review button and click it for CN with status as "Submitted to Global Fund"
 	
-			@Test  (priority = 24)
+			@Test  (priority = 25)
 			public static void FinalCTReview() throws BiffException, IOException, Exception  {
 	
 			Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1519,7 +1519,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	
 
 	//CT upload the final translated document- Translation Upload button for CN with status as "Reviewed and OK for TRP/GAC1"
-			@Test  (priority = 25)
+			@Test  (priority = 26)
 			public static void FinalTranslationReview() throws BiffException, IOException, Exception  {
 
 				Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1550,7 +1550,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 			}
 
 	//CCM user not able to edit concept note with status as "Reviewed and OK for TRP/GAC1"
-			@Test  (priority = 26)
+			@Test  (priority = 27)
 			public static void CCMEditChkAfterCTReview() throws BiffException, IOException, Exception  {
 					
 				Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1584,7 +1584,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 		
 			
 	//Verify that the CCM is able to edit the CN having status as Iteration-not yet Submitted
-			@Test  (priority = 27)
+			@Test  (priority = 28)
 			public static void ItrNotSubmittedEditChk() throws BiffException, IOException, Exception  {
 					
 				Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1617,7 +1617,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 			}			
 	
 	//Verify that the CCM is able to Submit  the CN having status as Iteration-not yet Submitted
-			@Test  (priority = 28)
+			@Test  (priority = 29)
 			public static void SubmitItrCN() throws BiffException, IOException, Exception  {
 				
 				Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1645,6 +1645,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 				confirm.click();
 
 			}
+
 }
 
 
