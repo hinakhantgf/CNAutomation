@@ -69,35 +69,39 @@ public class A2FUSer extends CNBase {
 	}
 	
 	@Test  (priority = 1)
-	public static void IterationYes() throws BiffException, IOException, Exception  {
+	public static void IterationScenarios() throws BiffException, IOException, Exception  {
 		
 		Workbook wb = Workbook.getWorkbook(srcCNRegression);
-		DecisiononConceptNote = wb.getSheet("A2FDetails").getCell(0,1).getContents();
-		GACConfirmationofTRPDecision = wb.getSheet("A2FDetails").getCell(1,1).getContents();
-		Status =  wb.getSheet("A2FDetails").getCell(2,1).getContents();
+		DecisiononConceptNote = wb.getSheet("A2FDetails").getCell(0,i).getContents();
+		GACConfirmationofTRPDecision = wb.getSheet("A2FDetails").getCell(1,i).getContents();
+		Status =  wb.getSheet("A2FDetails").getCell(2,i).getContents();
+		rowcount = wb.getSheet("A2FDetails").getRows();
 		Thread.sleep(2000);
-		Edit = driver.findElement(By.name("edit"));
-		Thread.sleep(2000);
-		HighlightElement.elementHighlight(Edit);
-		Thread.sleep(2000);
-		Edit.click();
-		Thread.sleep(2000);
-	    DecisionDropDown = driver.findElement(By.id("00Nb0000009YlMI"));
-	    DecisionDropDown.click();
-	    Thread.sleep(2000);
-	    Select DDD=new Select(DecisionDropDown);
-	    Thread.sleep(2000);
-	    DDD.selectByVisibleText(DecisiononConceptNote);
-	    Thread.sleep(2000);
-	    GACConfirmationDropDown = driver.findElement(By.id("00Nb0000009YlMR"));
-	    GACConfirmationDropDown.click();
-	    Select GACYN=new Select(GACConfirmationDropDown);
-	    Thread.sleep(2000);
-	    GACYN.selectByValue(GACConfirmationofTRPDecision);
-	    Thread.sleep(2000);
-	    driver.findElement(By.name("save")).click();
-	    Thread.sleep(2000);
-	    Assert.assertEquals(Status, driver.findElement(By.id("00Nb0000002BSIS_ilecell")).getText());
+		for(i=1; i<=rowcount; i++){
+			Edit = driver.findElement(By.name("edit"));
+			Thread.sleep(2000);
+			HighlightElement.elementHighlight(Edit);
+			Thread.sleep(2000);
+			Edit.click();
+			Thread.sleep(2000);
+		    DecisionDropDown = driver.findElement(By.id("00Nb0000009YlMI"));
+		    DecisionDropDown.click();
+		    Thread.sleep(2000);
+		    Select DDD=new Select(DecisionDropDown);
+		    Thread.sleep(2000);
+		    DDD.selectByVisibleText(DecisiononConceptNote);
+		    Thread.sleep(2000);
+		    GACConfirmationDropDown = driver.findElement(By.id("00Nb0000009YlMR"));
+		    GACConfirmationDropDown.click();
+		    Select GACYN=new Select(GACConfirmationDropDown);
+		    Thread.sleep(2000);
+		    GACYN.selectByValue(GACConfirmationofTRPDecision);
+		    Thread.sleep(2000);
+		    driver.findElement(By.name("save")).click();
+		    Thread.sleep(2000);
+		    Assert.assertEquals(Status, driver.findElement(By.id("00Nb0000002BSIS_ilecell")).getText());
+		}
+		
 	  }
 		/*
 	@Test  (priority = 2)
