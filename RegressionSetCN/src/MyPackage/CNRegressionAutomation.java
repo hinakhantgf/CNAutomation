@@ -1491,10 +1491,22 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	
 	}		
 	
+	@Test (priority = 25)
+	public static void FinalCoreDocument() throws BiffException, IOException{
+		   
+		    Workbook wb = Workbook.getWorkbook(srcCNRegression);
+		    String Record= wb.getSheet("CTReviewRecord").getCell(0,1).getContents();
+		    driver.findElement(By.linkText("Concept Notes")).click();
+			WebElement record=driver.findElement(By.linkText(Record));
+		    driver.findElement(By.linkText("Manage Documents")).click();
+		    driver.findElement(By.id("page:frm:rpt:0:j_id160")).click();
+		  }
+	
+	
 	
 	//CT is able to view the Final CT Review button and click it for CN with status as "Submitted to Global Fund"
 	
-			@Test  (priority = 25)
+			@Test  (priority = 26)
 			public static void FinalCTReview() throws BiffException, IOException, Exception  {
 	
 			Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1544,7 +1556,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 	
 
 	//CT upload the final translated document- Translation Upload button for CN with status as "Reviewed and OK for TRP/GAC1"
-			@Test  (priority = 26)
+			@Test  (priority = 27)
 			public static void FinalTranslationReview() throws BiffException, IOException, Exception  {
 
 				Workbook wb = Workbook.getWorkbook(srcCNRegression);
@@ -1584,7 +1596,7 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 				ConfirmBtn.click();
 			}
 
-			@Test  (priority = 27)
+			@Test  (priority = 28)
 			public static void CCMEditChkAfterCTReview() throws BiffException, IOException, Exception  {
 					
 				Workbook wb = Workbook.getWorkbook(srcCNRegression);
