@@ -28,6 +28,7 @@
         <include name="UploadFile" />  
         <include name="SubmitCN" />
          <include name="CTLogin" />
+         <include name="FinalCoreDocument" /> 
         <include name="FinalCTReview" />
         <include name="FinalTranslationReview" />
         <include name="CCMEditChkAfterCTReview" />
