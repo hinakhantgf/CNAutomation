@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 
 public class CNBase {
 
-	static File srcCNRegression = new File("C:\\Users\\499290\\Desktop\\Sneha\\CNProject\\RegressionCNTestData.xls");
+	static File srcCNRegression = new File("C:\\Users\\499290\\Desktop\\TestData\\RegressionCNTestData.xls");
 	static File srccodeCleanUp = new File("C:\\Users\\499290\\Desktop\\TF\\TestData_CodeCleanUp.xls");
 	static File srccrmdata = new File("C:\\Users\\499290\\Desktop\\TF\\CRMTestDataSheet.xls");
 	static String screenshotDirectory = "C:\\Users\\499290\\Desktop\\TF\\screenshot";
@@ -19,9 +19,7 @@ public class CNBase {
 	static WebDriver driver;
 	static String baseUrl1 = "https://sit-theglobalfund.cs41.force.com/GM/apex/OpenConceptNotesH" ;
 	static String baseUrl2 = "https://test.salesforce.com";
-	static String baseUrl3 = "https://test.salesforce.com";
-
-
+	static String baseUrl3;
 	static int i;
 	static String Record;
 	WebElement RecordLink;
@@ -36,10 +34,8 @@ public class CNBase {
 	static String DecisiononConceptNote;
 	static String GACConfirmationofTRPDecision;
 	static String Status;
-
-
-	
-
+	static WebElement DecisionDropDown;
+	static WebElement GACConfirmationDropDown;
 	
 	
 	
