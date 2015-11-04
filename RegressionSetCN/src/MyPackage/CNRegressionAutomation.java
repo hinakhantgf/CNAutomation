@@ -1778,8 +1778,71 @@ public static void CustomeCoverageOutput() throws BiffException, IOException, Ex
 
 					
 }
+//Verify that the CCM is able to edit the CN having status as Iteration-not yet Submitted
+			@Test  (priority = 27)
+			public static void ItrNotSubmittedEditChk() throws BiffException, IOException, Exception  {
+					
+				Workbook wb = Workbook.getWorkbook(srcCNRegression);
+				Record = wb.getSheet("ItrNotYetSubmittedRecord").getCell(0,1).getContents();
+				boolean exists;
+				//WebElement CN=driver.findElement(By.id("tsidLabel"));
+				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+				//CN.click();
+				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+				//driver.findElement(By.linkText("Concept Note and Grantmaking")).click();
+				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);	
+				Thread.sleep(1000);
+				driver.findElement(By.linkText("Concept Notes")).click();
+				Thread.sleep(5000);
+				driver.findElement(By.linkText(Record)).click();
+				//Click on GOALS & IMPACT INDICATORS link
+				WebElement impact = driver.findElement(By.linkText("GOALS & IMPACT INDICATORS"));
+				HighlightElement.elementHighlight(impact);
+				impact.click();
+				driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);	
+				//Check if Add Goal link is present on the page
+				exists= isElementPresent("Add Goal");
+				Assert.assertTrue(exists);
+				//Check if Add Custom Indicator link is present on the page
+				exists= isElementPresent("Add Custom Indicator");
+				Assert.assertTrue(exists);
+				//Check if Add Standard Indicator link is present on the page
+				exists= isElementPresent("Add Standard Indicator");
+				Assert.assertTrue(exists);
+			}			
+	
+	//Verify that the CCM is able to Submit  the CN having status as Iteration-not yet Submitted
+			@Test  (priority = 28)
+			public static void SubmitItrCN() throws BiffException, IOException, Exception  {
+				
+				Workbook wb = Workbook.getWorkbook(srcCNRegression);
+				Record = wb.getSheet("ItrNotYetSubmittedRecord").getCell(0,1).getContents();
+				//WebElement CN=driver.findElement(By.id("tsidLabel"));
+				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+				//CN.click();
+				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+				//driver.findElement(By.linkText("Concept Note and Grantmaking")).click();
+				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);	
+				Thread.sleep(5000);
+				driver.findElement(By.linkText("Concept Notes")).click();
+				Thread.sleep(5000);
+				driver.findElement(By.linkText(Record)).click();
+				//Click on Submit Concept Note button
+				WebElement submit = driver.findElement(By.linkText("Submit Concept Note"));
+				Thread.sleep(1000);
+				HighlightElement.elementHighlight(submit);
+				Thread.sleep(2000);
+				submit.click();
+				//Click on yes button to confirm CN submission
+				WebElement confirm = driver.findElement(By.id("CNoverview:frm:j_id57"));
+				HighlightElement.elementHighlight(confirm);
+				Thread.sleep(2000);
+				confirm.click();
 
+			}
 }
+
+
 	
 	
 
