@@ -19,7 +19,6 @@ public class CNBase {
 	static WebDriver driver;
 	static String baseUrl1 = "https://sit-theglobalfund.cs41.force.com/GM/apex/OpenConceptNotesH" ;
 	static String baseUrl2 = "https://test.salesforce.com";
-
 	static String baseUrl3 = "https://test.salesforce.com";
 
 

@@ -4,21 +4,20 @@
   <listeners>
     <listener class-name="MyPackage.TestListener"/>
   </listeners>
-  <test name="IntenalUser Test(failed)">
+  <test name="Test(failed)">
     <classes>
       <class name="MyPackage.CNRegressionAutomation">
         <methods>
           <include name="Recording"/>
-          <include name="CCMEditChkAfterCTReview"/>
-          <include name="SubmitItrCN"/>
-          <include name="CNModuleBudget"/>
-          <include name="ItrNotSubmittedEditChk"/>
+          <include name="IterationScenarios"/>
           <include name="FinalTranslationReview"/>
           <include name="VerificationOfOverviewPage"/>
+          <include name="FinalCTReview"/>
+          <include name="AddModule"/>
           <include name="StopRecording1"/>
-          <include name="CCMEditChk"/>
+          <include name="CTEditChk"/>
         </methods>
       </class> <!-- MyPackage.CNRegressionAutomation -->
     </classes>
-  </test> <!-- IntenalUser Test(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

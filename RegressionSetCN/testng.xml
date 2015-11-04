@@ -13,52 +13,34 @@
         <include name="VerificationOfOverviewPage" />
         <exclude name="AddNewPr" />
         <include name="AddModule" />
-        <include name="AddIntervention" />
-        <include name="AddPRintervention" />
+        <exclude name="AddIntervention" />
+        <exclude name="AddPRintervention" />
         <include name="TRPDateRegister" />
         <include name="CTPositiveAssessment" />
-        <include name="GoalCreation" />
-        <include name="StdImpactIndicator" />
-        <include name="ObjectiveCreation" />
-        <include name="StdOutcomeIndicator" />
-        <include name="CustomImpactInd" />
-        <include name="CustomOutcomeInd" />
-        <include name="CNModuleBudget" />
-        <include name="ChangeSubmissionDate" />
-        <include name="UploadFile" />  
+        <exclude name="GoalCreation" />
+        <exclude name="StdImpactIndicator" />
+        <exclude name="ObjectiveCreation" />
+        <exclude name="StdOutcomeIndicator" />
+        <exclude name="CustomImpactInd" />
+        <exclude name="CustomOutcomeInd" />
+        <exclude name="CNModuleBudget" />
+        <exclude name="ChangeSubmissionDate" />
+        <exclude name="UploadFile" />  
         <include name="SubmitCN" />
-<<<<<<< HEAD
         <include name="CCMEditChk"/>
         <include name="CTLogin"/>
         <include name="CTEditChk"/>
-        <include name="CTPositiveAssessment"/>
         <include name="FinalCTReview"/>
         <include name="FinalTranslationReview"/>
         <include name="CCMEditChkAfterCTReview"/>
+        <include name= "IterationScenarios"/>
         <include name="ItrNotSubmittedEditChk"/>
         <include name="SubmitItrCN"/>
-                
-=======
-         <include name="CTLogin" />
-        <include name="FinalCTReview" />
-        <include name="FinalTranslationReview" />
-        <include name="CCMEditChkAfterCTReview" />
-                 
->>>>>>> refs/heads/master
-         </methods>
-      </class>
-    </classes>
+        </methods>
+    </class>
+   </classes>
   </test> <!-- Test -->
-   <test name="Test A2F">
-   <classes>
-   <class name="MyPackage.A2FUSer">
-      <methods>
-        <include name="Login" />
-        <include name="IterationScenarios" />
-       </methods>
-      </class>
-    </classes>
-  </test> <!-- Test -->
-  
-  
 </suite> <!-- Suite -->
+                
+
+     
