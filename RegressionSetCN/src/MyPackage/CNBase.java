@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 
 public class CNBase {
 
-	static File srcCNRegression = new File("C:\\Users\\554525\\Desktop\\Sneha\\CNProject\\RegressionCNTestData.xls");
+	static File srcCNRegression = new File("C:\\Users\\499290\\Desktop\\Sneha\\CNProject\\RegressionCNTestData.xls");
 	static File srccodeCleanUp = new File("C:\\Users\\499290\\Desktop\\TF\\TestData_CodeCleanUp.xls");
 	static File srccrmdata = new File("C:\\Users\\499290\\Desktop\\TF\\CRMTestDataSheet.xls");
 	static String screenshotDirectory = "C:\\Users\\499290\\Desktop\\TF\\screenshot";
