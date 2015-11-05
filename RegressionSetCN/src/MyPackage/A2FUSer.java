@@ -98,7 +98,7 @@ public class A2FUSer extends CNBase {
 		    GACYN.selectByValue(GACConfirmationofTRPDecision);
 		    Thread.sleep(2000);
 		    driver.findElement(By.name("save")).click();
-		    Thread.sleep(2000);
+		    Thread.sleep(5000);
 		    Assert.assertEquals(Status, driver.findElement(By.id("00Nb0000002BSIS_ilecell")).getText());
 		}
 		

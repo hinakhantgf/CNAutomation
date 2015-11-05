@@ -6,23 +6,29 @@
   </listeners>
   <test name="Test(failed)">
     <classes>
+      <class name="MyPackage.CNRegressionAutomation">
+        <methods>
+          <include name="SubmitItrCN"/>
+          <include name="Recording"/>
+          <include name="ItrNotSubmittedEditChk"/>
+          <include name="AddModule"/>
+          <include name="CustomImpactInd"/>
+          <include name="FinalTranslationReview"/>
+          <include name="VerificationOfOverviewPage"/>
+          <include name="CTPositiveAssessment"/>
+          <include name="FinalCoreDocument"/>
+          <include name="CustomeCoverageOutput"/>
+          <include name="FinalCTReview"/>
+          <include name="IterationScenarios"/>
+          <include name="StopRecording1"/>
+        </methods>
+      </class> <!-- MyPackage.CNRegressionAutomation -->
       <class name="MyPackage.A2FUSer">
         <methods>
           <include name="Recording"/>
           <include name="StopRecording1"/>
         </methods>
       </class> <!-- MyPackage.A2FUSer -->
-      <class name="MyPackage.CNRegressionAutomation">
-        <methods>
-          <include name="FinalCoreDocument"/>
-          <include name="Recording"/>
-          <include name="FinalCTReview"/>
-          <include name="AddModule"/>
-          <include name="FinalTranslationReview"/>
-          <include name="StopRecording1"/>
-          <include name="VerificationOfOverviewPage"/>
-        </methods>
-      </class> <!-- MyPackage.CNRegressionAutomation -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
