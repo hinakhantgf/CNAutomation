@@ -1,2 +1,7 @@
-/MyPackage/
+/.classpath
+/.project
+/.settings/
+/properties/
+/test-output/
+/testng.xml
 /src/
