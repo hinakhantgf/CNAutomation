@@ -4,19 +4,31 @@
   <listeners>
     <listener class-name="MyPackage.TestListener"/>
   </listeners>
-  <test name="IntenalUser Test(failed)">
+  <test name="Test(failed)">
     <classes>
-      <class name="MyPackage.CNAutoDemo">
+      <class name="MyPackage.CNRegressionAutomation">
         <methods>
-          <include name="StdOutcomeIndicator"/>
+          <include name="SubmitItrCN"/>
           <include name="Recording"/>
-          <include name="CNModuleBudget"/>
-          <include name="StdImpactIndicator"/>
+          <include name="ItrNotSubmittedEditChk"/>
+          <include name="AddModule"/>
+          <include name="CustomImpactInd"/>
+          <include name="FinalTranslationReview"/>
           <include name="VerificationOfOverviewPage"/>
+          <include name="CTPositiveAssessment"/>
+          <include name="FinalCoreDocument"/>
+          <include name="CustomeCoverageOutput"/>
+          <include name="FinalCTReview"/>
+          <include name="IterationScenarios"/>
           <include name="StopRecording1"/>
-          <include name="ChangeSubmissionDate"/>
         </methods>
-      </class> <!-- MyPackage.CNAutoDemo -->
+      </class> <!-- MyPackage.CNRegressionAutomation -->
+      <class name="MyPackage.A2FUSer">
+        <methods>
+          <include name="Recording"/>
+          <include name="StopRecording1"/>
+        </methods>
+      </class> <!-- MyPackage.A2FUSer -->
     </classes>
-  </test> <!-- IntenalUser Test(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
