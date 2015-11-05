@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default suite" verbose="2" allow-return-values="true">
+
+  <listeners>
+		<listener class-name="MyPackage.TestListener" />
+	</listeners>
+  <test name="Test">
+   <classes>
+   <class name="MyPackage.CNRegressionAutomation">
+      <methods>
+        <include name="Login" />
+        <include name="VerificationOfOverviewPage" />
+        <exclude name="AddNewPr" />
+        <include name="AddModule" />
+        <include name="AddIntervention" />
+        <include name="AddPRintervention" />
+        <include name="TRPDateRegister" />
+        <include name="CTPositiveAssessment" />
+        <include name="GoalCreation" />
+        <include name="StdImpactIndicator" />
+        <include name="ObjectiveCreation" />
+        <include name="StdOutcomeIndicator" />
+        <include name="CustomImpactInd" />
+        <include name="CustomOutcomeInd" />
+        <include name="CustomeCoverageOutput" />
+        <include name="CNModuleBudget" />
+        <include name="ChangeSubmissionDate" />
+        <include name="UploadFile" />  
+        <include name="SubmitCN" />
+        <include name="CTLogin" />
+        <include name="FinalCoreDocument" /> 
+        <include name="FinalCTReview" />
+        <include name="FinalTranslationReview" />
+        <include name="CCMEditChkAfterCTReview" />
+        <include name="IterationScenarios" />
+        <include name="ItrNotSubmittedEditChk" />
+        <include name="SubmitItrCN" />
+        
+                 
+         </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+   <test name="Test A2F">
+   <classes>
+   <class name="MyPackage.A2FUSer">
+      <methods>
+        <include name="Login" />
+        <include name="IterationScenarios" />
+       </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->
