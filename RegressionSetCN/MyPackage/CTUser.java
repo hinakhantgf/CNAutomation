@@ -82,17 +82,17 @@ public class CTUser extends CNBase{
 			//Enter username in login page
 			WebElement username = driver.findElement(By.id("username"));
 			HighlightElement.elementHighlight(username);
-			Thread.sleep(2000);
+			
 			username.sendKeys(data00);
 			//Enter password in login page
 			WebElement password = driver.findElement(By.id("password"));
 			HighlightElement.elementHighlight(password);
-			Thread.sleep(2000);
+			
 			password.sendKeys(data01);
 			WebElement Login= driver.findElement(By.id("Login"));
 			Login.click();
 			System.out.println("Login SuccessFully");
-			Thread.sleep(5000);
+			
 			//String TakescreenShot =  GenericHelper.takeScreenShot("Login");
 			//Reporter.log("<a href=\"" + TakescreenShot + "\"><p align=\"left\">Login Sucessfully screenshot at " + new Date()+ "</p>");
 		}
@@ -114,9 +114,9 @@ public class CTUser extends CNBase{
 			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 			//driver.findElement(By.linkText("Concept Note and Grantmaking")).click();
 			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);	
-			Thread.sleep(1000);
+			
 			driver.findElement(By.linkText("Concept Notes")).click();
-			Thread.sleep(5000);
+			
 			driver.findElement(By.linkText(Record)).click();
 			//Click on GOALS & IMPACT INDICATORS link
 			WebElement impact = driver.findElement(By.linkText("GOALS & IMPACT INDICATORS"));
@@ -160,25 +160,25 @@ public class CTUser extends CNBase{
 			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 			//driver.findElement(By.linkText("Concept Note and Grantmaking")).click();
 			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-			Thread.sleep(1000);
+			
 			driver.findElement(By.linkText("Concept Notes")).click();
-			Thread.sleep(5000);
+			
 			driver.findElement(By.linkText(data00)).click();
-			Thread.sleep(2000);
+			
 			//Click on Submit Concept Note button
 			WebElement assess = driver.findElement(By.id("CNoverview:frm:CommandLinkAssess"));
 			HighlightElement.elementHighlight(assess);
-			Thread.sleep(2000);
+			
 			assess.click();
 			//Click on pretty sure radio button
 			WebElement radio1= driver.findElement(By.id("CNoverview:frm:probNotRadio1:0"));
 			HighlightElement.elementHighlight(radio1);
-			Thread.sleep(2000);
+			
 			radio1.click();
 			//Click on confirm button
 			WebElement confirm= driver.findElement(By.id("CNoverview:frm:j_id108"));
 			HighlightElement.elementHighlight(confirm);
-			Thread.sleep(2000);
+			
 			confirm.click();
 		}
 	
@@ -198,28 +198,28 @@ public class CTUser extends CNBase{
 			//driver.findElement(By.linkText("Concept Note and Grantmaking")).click();
 			//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);	
 			driver.findElement(By.linkText("Concept Notes")).click();
-			Thread.sleep(5000);
+			
 			driver.findElement(By.linkText(data00)).click();
-			Thread.sleep(2000);
+			
 			//Click on Submit Concept Note button
 			WebElement assess = driver.findElement(By.id("CNoverview:frm:CommandLinkAssess"));
 			HighlightElement.elementHighlight(assess);
-			Thread.sleep(2000);
+			
 			assess.click();
 			//Click on probably not radio button
 			WebElement radio1= driver.findElement(By.id("CNoverview:frm:probNotRadio1:1"));
 			HighlightElement.elementHighlight(radio1);
-			Thread.sleep(2000);
+			
 			radio1.click();
 			//Enter the most realistic submission date
 			WebElement date= driver.findElement(By.id("CNoverview:frm:subDateListAssess"));
 			HighlightElement.elementHighlight(date);
-			Thread.sleep(2000);
+			
 			date.sendKeys(data01);
 			//Click on confirm button
 			WebElement confirm= driver.findElement(By.id("CNoverview:frm:j_id108"));
 			HighlightElement.elementHighlight(confirm);
-			Thread.sleep(2000);
+			
 			confirm.click();
 		
 		}
@@ -247,17 +247,17 @@ public class CTUser extends CNBase{
 			WebElement FinalReview = driver.findElement(By.linkText("Final CT Review"));
 			HighlightElement.elementHighlight(FinalReview);
 			FinalReview.click();
-			Thread.sleep(1000);
+			
 			//Click on the checkbox to confirm the review process
 			WebElement ChkBox = driver.findElement(By.id("CNoverview:frm:checkBox"));
 			HighlightElement.elementHighlight(ChkBox);
 			ChkBox.click();
-			Thread.sleep(1000);
+			
 			//Click on Final CT Review button
 			WebElement FinalCTReviewBtn = driver.findElement(By.id("CNoverview:frm:finishCTR"));
 			HighlightElement.elementHighlight(FinalCTReviewBtn);
 			FinalCTReviewBtn.click();
-			Thread.sleep(1000);
+			
 			//Click on Confirm button
 			WebElement ConfirmBtn =	driver.findElement(By.name("CNoverview:frm:j_id89"));
 			HighlightElement.elementHighlight(ConfirmBtn);
@@ -279,7 +279,7 @@ public class CTUser extends CNBase{
 				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 				//driver.findElement(By.linkText("Concept Note and Grantmaking")).click();
 				//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);	
-				Thread.sleep(1000);
+				
 				driver.findElement(By.linkText("Concept Notes")).click();
 				WebElement record=driver.findElement(By.linkText(data00));
 				HighlightElement.elementHighlight(record);
