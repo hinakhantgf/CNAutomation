@@ -1,141 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="11" total="28" passed="17">
+<testng-results skipped="0" failed="4" total="5" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_Login.png"><p align="left"> screenshot at Wed Nov 04 19:26:58 IST 2015</p>]]>
+      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_Login.png"><p align="left"> screenshot at Fri Nov 06 19:35:01 IST 2015</p>]]>
     </line>
     <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_VerificationOfOverviewPage.png"><p align="left"> screenshot at Wed Nov 04 19:26:59 IST 2015</p>]]>
+      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_VerificationOfOverviewPage.png"><p align="left"> screenshot at Fri Nov 06 19:35:06 IST 2015</p>]]>
     </line>
     <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_TRPDateRegister.png"><p align="left"> screenshot at Wed Nov 04 19:27:27 IST 2015</p>]]>
+      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_TRPDateRegister.png"><p align="left"> screenshot at Fri Nov 06 19:35:22 IST 2015</p>]]>
     </line>
     <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_CTPositiveAssessment.png"><p align="left"> screenshot at Wed Nov 04 19:28:19 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_AddModule.png"><p align="left"> screenshot at Wed Nov 04 19:28:28 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_AddIntervention.png"><p align="left"> screenshot at Wed Nov 04 19:29:17 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_AddPRintervention.png"><p align="left"> screenshot at Wed Nov 04 19:29:44 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_GoalCreation.png"><p align="left"> screenshot at Wed Nov 04 19:30:36 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_StdImpactIndicator.png"><p align="left"> screenshot at Wed Nov 04 19:32:20 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_CustomImpactInd.png"><p align="left"> screenshot at Wed Nov 04 19:32:34 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_ObjectiveCreation.png"><p align="left"> screenshot at Wed Nov 04 19:33:26 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_StdOutcomeIndicator.png"><p align="left"> screenshot at Wed Nov 04 19:35:03 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_CustomOutcomeInd.png"><p align="left"> screenshot at Wed Nov 04 19:36:09 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_CustomeCoverageOutput.png"><p align="left"> screenshot at Wed Nov 04 19:37:00 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_CNModuleBudget.png"><p align="left"> screenshot at Wed Nov 04 19:37:42 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_ChangeSubmissionDate.png"><p align="left"> screenshot at Wed Nov 04 19:38:03 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_UploadFile.png"><p align="left"> screenshot at Wed Nov 04 19:38:59 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_SubmitCN.png"><p align="left"> screenshot at Wed Nov 04 19:39:11 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_CTLogin.png"><p align="left"> screenshot at Wed Nov 04 19:39:40 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_FinalCoreDocument.png"><p align="left"> screenshot at Wed Nov 04 19:40:40 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_FinalCTReview.png"><p align="left"> screenshot at Wed Nov 04 19:40:51 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_FinalTranslationReview.png"><p align="left"> screenshot at Wed Nov 04 19:42:15 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_CCMEditChkAfterCTReview.png"><p align="left"> screenshot at Wed Nov 04 19:44:42 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_IterationScenarios.png"><p align="left"> screenshot at Wed Nov 04 19:45:31 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_ItrNotSubmittedEditChk.png"><p align="left"> screenshot at Wed Nov 04 19:46:13 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_SubmitItrCN.png"><p align="left"> screenshot at Wed Nov 04 19:47:03 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_Login.png"><p align="left"> screenshot at Wed Nov 04 19:47:45 IST 2015</p>]]>
-    </line>
-    <line>
-      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_IterationScenarios.png"><p align="left"> screenshot at Wed Nov 04 19:53:22 IST 2015</p>]]>
+      <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_CTPositiveAssessment.png"><p align="left"> screenshot at Fri Nov 06 19:37:49 IST 2015</p>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1610811" started-at="2015-11-04T13:56:31Z" finished-at="2015-11-04T14:23:22Z">
+  <suite name="Default suite" duration-ms="277178" started-at="2015-11-06T14:04:42Z" finished-at="2015-11-06T14:09:19Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="1232402" started-at="2015-11-04T13:56:31Z" finished-at="2015-11-04T14:17:04Z">
-      <class name="MyPackage.CNRegressionAutomation">
-        <test-method status="PASS" signature="Recording()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="Recording" is-config="true" duration-ms="201" started-at="2015-11-04T19:26:31Z" finished-at="2015-11-04T19:26:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Recording -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="Login" duration-ms="26365" started-at="2015-11-04T19:26:31Z" finished-at="2015-11-04T19:26:58Z">
+    <test name="Test CNSubmission" duration-ms="277178" started-at="2015-11-06T14:04:42Z" finished-at="2015-11-06T14:09:19Z">
+      <class name="MyPackage.ConceptNotesubmission">
+        <test-method status="PASS" signature="Login()[pri:0, instance:MyPackage.ConceptNotesubmission@163e9ab]" name="Login" duration-ms="17751" started-at="2015-11-06T19:34:42Z" finished-at="2015-11-06T19:34:59Z">
           <reporter-output>
             <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_Login.png"><p align="left"> screenshot at Wed Nov 04 19:26:58 IST 2015</p>]]>
+              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_Login.png"><p align="left"> screenshot at Fri Nov 06 19:35:01 IST 2015</p>]]>
             </line>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="FAIL" signature="VerificationOfOverviewPage()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="VerificationOfOverviewPage" duration-ms="240" started-at="2015-11-04T19:26:58Z" finished-at="2015-11-04T19:26:59Z">
+        <test-method status="FAIL" signature="VerificationOfOverviewPage()[pri:0, instance:MyPackage.ConceptNotesubmission@163e9ab]" name="VerificationOfOverviewPage" duration-ms="161" started-at="2015-11-06T19:35:01Z" finished-at="2015-11-06T19:35:01Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Global Fund Grant Management Portal] but found [salesforce.com - Enterprise Edition]]]>
+              <![CDATA[expected [https://sit-theglobalfund.cs41.force.com/GM/secur/frontdoor.jsp?sid=00D5500000068kT%21AQ8AQErB8UD2o6NX14uYTrYGqlPfENRi_mgrGUSaLj_j.PPy_Ys6WFkh9_KsS8txJcolEW52xQ1MNlD6I70tPuFUNwadmYz6&retURL=%2FGM%2Fapex%2FOpenConceptNotesH&apv=1&untethered=&cshc=5000000ym42500000068kT&refURL=https%3A%2F%2Fsit-theglobalfund.cs41.force.com%2FGM%2Fsecur%2Ffrontdoor.jsp] but found [salesforce.com - Enterprise Edition]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Global Fund Grant Management Portal] but found [salesforce.com - Enterprise Edition]
+              <![CDATA[java.lang.AssertionError: expected [https://sit-theglobalfund.cs41.force.com/GM/secur/frontdoor.jsp?sid=00D5500000068kT%21AQ8AQErB8UD2o6NX14uYTrYGqlPfENRi_mgrGUSaLj_j.PPy_Ys6WFkh9_KsS8txJcolEW52xQ1MNlD6I70tPuFUNwadmYz6&retURL=%2FGM%2Fapex%2FOpenConceptNotesH&apv=1&untethered=&cshc=5000000ym42500000068kT&refURL=https%3A%2F%2Fsit-theglobalfund.cs41.force.com%2FGM%2Fsecur%2Ffrontdoor.jsp] but found [salesforce.com - Enterprise Edition]
 	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertEquals(Assert.java:125)
-	at org.testng.Assert.assertEquals(Assert.java:178)
-	at org.testng.Assert.assertEquals(Assert.java:188)
-	at MyPackage.CNRegressionAutomation.VerificationOfOverviewPage(CNRegressionAutomation.java:86)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at MyPackage.ConceptNotesubmission.VerificationOfOverviewPage(ConceptNotesubmission.java:68)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
-	at org.testng.TestNG.run(TestNG.java:1009)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
@@ -144,42 +68,103 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_VerificationOfOverviewPage.png"><p align="left"> screenshot at Wed Nov 04 19:26:59 IST 2015</p>]]>
+              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_VerificationOfOverviewPage.png"><p align="left"> screenshot at Fri Nov 06 19:35:06 IST 2015</p>]]>
             </line>
           </reporter-output>
         </test-method> <!-- VerificationOfOverviewPage -->
-        <test-method status="PASS" signature="TRPDateRegister()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="TRPDateRegister" duration-ms="27810" started-at="2015-11-04T19:26:59Z" finished-at="2015-11-04T19:27:27Z">
+        <test-method status="FAIL" signature="TRPDateRegister()[pri:0, instance:MyPackage.ConceptNotesubmission@163e9ab]" name="TRPDateRegister" duration-ms="15468" started-at="2015-11-06T19:35:06Z" finished-at="2015-11-06T19:35:21Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=46.0.2490.80)
+  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 83 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:38'
+System info: host: '01HW189758', ip: '192.168.9.173', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\499290\AppData\Local\Temp\scoped_dir5620_8680}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=46.0.2490.80, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ade61e9986b92ed15426e7730e36aabb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=46.0.2490.80)
+  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 83 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:38'
+System info: host: '01HW189758', ip: '192.168.9.173', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\499290\AppData\Local\Temp\scoped_dir5620_8680}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=46.0.2490.80, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ade61e9986b92ed15426e7730e36aabb
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:508)
+	at MyPackage.HighlightElement.elementHighlight(HighlightElement.java:14)
+	at MyPackage.ConceptNotesubmission.TRPDateRegister(ConceptNotesubmission.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
             <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_TRPDateRegister.png"><p align="left"> screenshot at Wed Nov 04 19:27:27 IST 2015</p>]]>
+              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_TRPDateRegister.png"><p align="left"> screenshot at Fri Nov 06 19:35:22 IST 2015</p>]]>
             </line>
           </reporter-output>
         </test-method> <!-- TRPDateRegister -->
-        <test-method status="FAIL" signature="CTPositiveAssessment()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="CTPositiveAssessment" duration-ms="37533" started-at="2015-11-04T19:27:27Z" finished-at="2015-11-04T19:28:05Z">
+        <test-method status="FAIL" signature="CTPositiveAssessment()[pri:0, instance:MyPackage.ConceptNotesubmission@163e9ab]" name="CTPositiveAssessment" duration-ms="147439" started-at="2015-11-06T19:35:22Z" finished-at="2015-11-06T19:37:49Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element
   (Session info: chrome=46.0.2490.80)
   (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.71 seconds
+Command duration or timeout: 100.53 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:38'
-System info: host: '01HW189758', ip: '192.168.9.179', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
+System info: host: '01HW189758', ip: '192.168.9.173', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\499290\AppData\Local\Temp\scoped_dir11308_27923}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=46.0.2490.80, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f77798070bfc025ce948e55c45bf93f4]]>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\499290\AppData\Local\Temp\scoped_dir5620_8680}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=46.0.2490.80, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ade61e9986b92ed15426e7730e36aabb]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
   (Session info: chrome=46.0.2490.80)
   (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.71 seconds
+Command duration or timeout: 100.53 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:38'
-System info: host: '01HW189758', ip: '192.168.9.179', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
+System info: host: '01HW189758', ip: '192.168.9.173', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\499290\AppData\Local\Temp\scoped_dir11308_27923}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=46.0.2490.80, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f77798070bfc025ce948e55c45bf93f4
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\499290\AppData\Local\Temp\scoped_dir5620_8680}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=46.0.2490.80, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ade61e9986b92ed15426e7730e36aabb
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -191,28 +176,28 @@ Session ID: f77798070bfc025ce948e55c45bf93f4
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
 	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at MyPackage.CNRegressionAutomation.CTPositiveAssessment(CNRegressionAutomation.java:174)
+	at MyPackage.ConceptNotesubmission.CTPositiveAssessment(ConceptNotesubmission.java:153)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
-	at org.testng.TestNG.run(TestNG.java:1009)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
@@ -221,732 +206,46 @@ Session ID: f77798070bfc025ce948e55c45bf93f4
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_CTPositiveAssessment.png"><p align="left"> screenshot at Wed Nov 04 19:28:19 IST 2015</p>]]>
+              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_CTPositiveAssessment.png"><p align="left"> screenshot at Fri Nov 06 19:37:49 IST 2015</p>]]>
             </line>
           </reporter-output>
         </test-method> <!-- CTPositiveAssessment -->
-        <test-method status="FAIL" signature="AddModule()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="AddModule" duration-ms="8410" started-at="2015-11-04T19:28:19Z" finished-at="2015-11-04T19:28:27Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element
-  (Session info: chrome=46.0.2490.80)
-  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 87 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:38'
-System info: host: '01HW189758', ip: '192.168.9.179', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\499290\AppData\Local\Temp\scoped_dir11308_27923}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=46.0.2490.80, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f77798070bfc025ce948e55c45bf93f4]]>
-            </message>
+        <test-method status="FAIL" signature="ChangeSubmissionDate()[pri:0, instance:MyPackage.ConceptNotesubmission@163e9ab]" name="ChangeSubmissionDate" duration-ms="87427" started-at="2015-11-06T19:37:49Z" finished-at="2015-11-06T19:39:17Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=46.0.2490.80)
-  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 87 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:38'
-System info: host: '01HW189758', ip: '192.168.9.179', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\499290\AppData\Local\Temp\scoped_dir11308_27923}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=46.0.2490.80, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f77798070bfc025ce948e55c45bf93f4
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at MyPackage.CNRegressionAutomation.AddModule(CNRegressionAutomation.java:305)
+              <![CDATA[java.lang.NullPointerException
+	at MyPackage.ConceptNotesubmission.ChangeSubmissionDate(ConceptNotesubmission.java:193)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
-	at org.testng.TestNG.run(TestNG.java:1009)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_AddModule.png"><p align="left"> screenshot at Wed Nov 04 19:28:28 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- AddModule -->
-        <test-method status="PASS" signature="AddIntervention()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="AddIntervention" duration-ms="49279" started-at="2015-11-04T19:28:28Z" finished-at="2015-11-04T19:29:17Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_AddIntervention.png"><p align="left"> screenshot at Wed Nov 04 19:29:17 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- AddIntervention -->
-        <test-method status="PASS" signature="AddPRintervention()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="AddPRintervention" duration-ms="26357" started-at="2015-11-04T19:29:17Z" finished-at="2015-11-04T19:29:44Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_AddPRintervention.png"><p align="left"> screenshot at Wed Nov 04 19:29:44 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- AddPRintervention -->
-        <test-method status="PASS" signature="GoalCreation()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="GoalCreation" duration-ms="45997" started-at="2015-11-04T19:29:44Z" finished-at="2015-11-04T19:30:30Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_GoalCreation.png"><p align="left"> screenshot at Wed Nov 04 19:30:36 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- GoalCreation -->
-        <test-method status="PASS" signature="StdImpactIndicator()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="StdImpactIndicator" duration-ms="104376" started-at="2015-11-04T19:30:36Z" finished-at="2015-11-04T19:32:20Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_StdImpactIndicator.png"><p align="left"> screenshot at Wed Nov 04 19:32:20 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- StdImpactIndicator -->
-        <test-method status="FAIL" signature="CustomImpactInd()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="CustomImpactInd" duration-ms="13368" started-at="2015-11-04T19:32:20Z" finished-at="2015-11-04T19:32:34Z">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=46.0.2490.80)
-  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 9 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:38'
-System info: host: '01HW189758', ip: '192.168.9.179', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\499290\AppData\Local\Temp\scoped_dir11308_27923}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=46.0.2490.80, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f77798070bfc025ce948e55c45bf93f4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=46.0.2490.80)
-  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 9 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:38'
-System info: host: '01HW189758', ip: '192.168.9.179', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\499290\AppData\Local\Temp\scoped_dir11308_27923}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=46.0.2490.80, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f77798070bfc025ce948e55c45bf93f4
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:508)
-	at MyPackage.HighlightElement.elementHighlight(HighlightElement.java:14)
-	at MyPackage.CNRegressionAutomation.CustomImpactInd(CNRegressionAutomation.java:553)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
-	at org.testng.TestNG.run(TestNG.java:1009)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_CustomImpactInd.png"><p align="left"> screenshot at Wed Nov 04 19:32:34 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- CustomImpactInd -->
-        <test-method status="PASS" signature="ObjectiveCreation()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="ObjectiveCreation" duration-ms="44154" started-at="2015-11-04T19:32:34Z" finished-at="2015-11-04T19:33:18Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_ObjectiveCreation.png"><p align="left"> screenshot at Wed Nov 04 19:33:26 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- ObjectiveCreation -->
-        <test-method status="PASS" signature="StdOutcomeIndicator()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="StdOutcomeIndicator" duration-ms="96286" started-at="2015-11-04T19:33:26Z" finished-at="2015-11-04T19:35:02Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_StdOutcomeIndicator.png"><p align="left"> screenshot at Wed Nov 04 19:35:03 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- StdOutcomeIndicator -->
-        <test-method status="PASS" signature="CustomOutcomeInd()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="CustomOutcomeInd" duration-ms="65879" started-at="2015-11-04T19:35:03Z" finished-at="2015-11-04T19:36:09Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_CustomOutcomeInd.png"><p align="left"> screenshot at Wed Nov 04 19:36:09 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- CustomOutcomeInd -->
-        <test-method status="FAIL" signature="CustomeCoverageOutput()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="CustomeCoverageOutput" duration-ms="50057" started-at="2015-11-04T19:36:09Z" finished-at="2015-11-04T19:36:59Z">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=46.0.2490.80)
-  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:38'
-System info: host: '01HW189758', ip: '192.168.9.179', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\499290\AppData\Local\Temp\scoped_dir11308_27923}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=46.0.2490.80, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f77798070bfc025ce948e55c45bf93f4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=46.0.2490.80)
-  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:38'
-System info: host: '01HW189758', ip: '192.168.9.179', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\499290\AppData\Local\Temp\scoped_dir11308_27923}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=46.0.2490.80, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f77798070bfc025ce948e55c45bf93f4
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:89)
-	at MyPackage.CNRegressionAutomation.CustomeCoverageOutput(CNRegressionAutomation.java:1021)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
-	at org.testng.TestNG.run(TestNG.java:1009)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_CustomeCoverageOutput.png"><p align="left"> screenshot at Wed Nov 04 19:37:00 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- CustomeCoverageOutput -->
-        <test-method status="PASS" signature="CNModuleBudget()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="CNModuleBudget" duration-ms="41731" started-at="2015-11-04T19:37:00Z" finished-at="2015-11-04T19:37:41Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_CNModuleBudget.png"><p align="left"> screenshot at Wed Nov 04 19:37:42 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- CNModuleBudget -->
-        <test-method status="PASS" signature="ChangeSubmissionDate()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="ChangeSubmissionDate" duration-ms="20441" started-at="2015-11-04T19:37:42Z" finished-at="2015-11-04T19:38:02Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_ChangeSubmissionDate.png"><p align="left"> screenshot at Wed Nov 04 19:38:03 IST 2015</p>]]>
-            </line>
           </reporter-output>
         </test-method> <!-- ChangeSubmissionDate -->
-        <test-method status="PASS" signature="UploadFile()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="UploadFile" duration-ms="51392" started-at="2015-11-04T19:38:03Z" finished-at="2015-11-04T19:38:54Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_UploadFile.png"><p align="left"> screenshot at Wed Nov 04 19:38:59 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- UploadFile -->
-        <test-method status="PASS" signature="SubmitCN()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="SubmitCN" duration-ms="12195" started-at="2015-11-04T19:38:59Z" finished-at="2015-11-04T19:39:11Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_SubmitCN.png"><p align="left"> screenshot at Wed Nov 04 19:39:11 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- SubmitCN -->
-        <test-method status="PASS" signature="CTLogin()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="CTLogin" duration-ms="20695" started-at="2015-11-04T19:39:11Z" finished-at="2015-11-04T19:39:32Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_CTLogin.png"><p align="left"> screenshot at Wed Nov 04 19:39:40 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- CTLogin -->
-        <test-method status="FAIL" signature="FinalCoreDocument()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="FinalCoreDocument" duration-ms="59788" started-at="2015-11-04T19:39:40Z" finished-at="2015-11-04T19:40:40Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element
-  (Session info: chrome=46.0.2490.80)
-  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 47.21 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:38'
-System info: host: '01HW189758', ip: '192.168.9.179', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\499290\AppData\Local\Temp\scoped_dir11308_27923}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=46.0.2490.80, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f77798070bfc025ce948e55c45bf93f4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=46.0.2490.80)
-  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 47.21 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:38'
-System info: host: '01HW189758', ip: '192.168.9.179', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\499290\AppData\Local\Temp\scoped_dir11308_27923}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=46.0.2490.80, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f77798070bfc025ce948e55c45bf93f4
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at MyPackage.CNRegressionAutomation.FinalCoreDocument(CNRegressionAutomation.java:1428)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
-	at org.testng.TestNG.run(TestNG.java:1009)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_FinalCoreDocument.png"><p align="left"> screenshot at Wed Nov 04 19:40:40 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- FinalCoreDocument -->
-        <test-method status="FAIL" signature="FinalCTReview()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="FinalCTReview" duration-ms="10451" started-at="2015-11-04T19:40:40Z" finished-at="2015-11-04T19:40:50Z">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=46.0.2490.80)
-  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 16 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:38'
-System info: host: '01HW189758', ip: '192.168.9.179', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\499290\AppData\Local\Temp\scoped_dir11308_27923}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=46.0.2490.80, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f77798070bfc025ce948e55c45bf93f4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=46.0.2490.80)
-  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 16 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:38'
-System info: host: '01HW189758', ip: '192.168.9.179', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\499290\AppData\Local\Temp\scoped_dir11308_27923}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=46.0.2490.80, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f77798070bfc025ce948e55c45bf93f4
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:508)
-	at MyPackage.HighlightElement.elementHighlight(HighlightElement.java:14)
-	at MyPackage.CNRegressionAutomation.FinalCTReview(CNRegressionAutomation.java:1453)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
-	at org.testng.TestNG.run(TestNG.java:1009)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_FinalCTReview.png"><p align="left"> screenshot at Wed Nov 04 19:40:51 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- FinalCTReview -->
-        <test-method status="FAIL" signature="FinalTranslationReview()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="FinalTranslationReview" duration-ms="83728" started-at="2015-11-04T19:40:51Z" finished-at="2015-11-04T19:42:15Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element
-  (Session info: chrome=46.0.2490.80)
-  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 40.02 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:38'
-System info: host: '01HW189758', ip: '192.168.9.179', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\499290\AppData\Local\Temp\scoped_dir11308_27923}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=46.0.2490.80, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f77798070bfc025ce948e55c45bf93f4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=46.0.2490.80)
-  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 40.02 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:38'
-System info: host: '01HW189758', ip: '192.168.9.179', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\499290\AppData\Local\Temp\scoped_dir11308_27923}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=46.0.2490.80, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f77798070bfc025ce948e55c45bf93f4
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at MyPackage.CNRegressionAutomation.FinalTranslationReview(CNRegressionAutomation.java:1515)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
-	at org.testng.TestNG.run(TestNG.java:1009)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_FinalTranslationReview.png"><p align="left"> screenshot at Wed Nov 04 19:42:15 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- FinalTranslationReview -->
-        <test-method status="PASS" signature="CCMEditChkAfterCTReview()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="CCMEditChkAfterCTReview" duration-ms="146520" started-at="2015-11-04T19:42:15Z" finished-at="2015-11-04T19:44:41Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_CCMEditChkAfterCTReview.png"><p align="left"> screenshot at Wed Nov 04 19:44:42 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- CCMEditChkAfterCTReview -->
-        <test-method status="FAIL" signature="IterationScenarios()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="IterationScenarios" duration-ms="48480" started-at="2015-11-04T19:44:42Z" finished-at="2015-11-04T19:45:30Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Accepted by GAC1] but found [Iteration – Not Yet Submitted]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Accepted by GAC1] but found [Iteration – Not Yet Submitted]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertEquals(Assert.java:125)
-	at org.testng.Assert.assertEquals(Assert.java:178)
-	at org.testng.Assert.assertEquals(Assert.java:188)
-	at MyPackage.CNRegressionAutomation.IterationScenarios(CNRegressionAutomation.java:1623)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
-	at org.testng.TestNG.run(TestNG.java:1009)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_IterationScenarios.png"><p align="left"> screenshot at Wed Nov 04 19:45:31 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- IterationScenarios -->
-        <test-method status="FAIL" signature="ItrNotSubmittedEditChk()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="ItrNotSubmittedEditChk" duration-ms="42018" started-at="2015-11-04T19:45:31Z" finished-at="2015-11-04T19:46:13Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element
-  (Session info: chrome=46.0.2490.80)
-  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 40.01 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:38'
-System info: host: '01HW189758', ip: '192.168.9.179', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\499290\AppData\Local\Temp\scoped_dir11308_27923}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=46.0.2490.80, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f77798070bfc025ce948e55c45bf93f4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=46.0.2490.80)
-  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 40.01 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:38'
-System info: host: '01HW189758', ip: '192.168.9.179', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\499290\AppData\Local\Temp\scoped_dir11308_27923}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=46.0.2490.80, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f77798070bfc025ce948e55c45bf93f4
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
-	at org.openqa.selenium.By$ById.findElement(By.java:214)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at MyPackage.CNRegressionAutomation.ItrNotSubmittedEditChk(CNRegressionAutomation.java:1638)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
-	at org.testng.TestNG.run(TestNG.java:1009)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_ItrNotSubmittedEditChk.png"><p align="left"> screenshot at Wed Nov 04 19:46:13 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- ItrNotSubmittedEditChk -->
-        <test-method status="FAIL" signature="SubmitItrCN()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="SubmitItrCN" duration-ms="48909" started-at="2015-11-04T19:46:13Z" finished-at="2015-11-04T19:47:02Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element
-  (Session info: chrome=46.0.2490.80)
-  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 40.53 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:38'
-System info: host: '01HW189758', ip: '192.168.9.179', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\499290\AppData\Local\Temp\scoped_dir11308_27923}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=46.0.2490.80, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f77798070bfc025ce948e55c45bf93f4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=46.0.2490.80)
-  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 40.53 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:38'
-System info: host: '01HW189758', ip: '192.168.9.179', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\499290\AppData\Local\Temp\scoped_dir11308_27923}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=46.0.2490.80, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: f77798070bfc025ce948e55c45bf93f4
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:242)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at MyPackage.CNRegressionAutomation.SubmitItrCN(CNRegressionAutomation.java:1696)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
-	at org.testng.TestNG.run(TestNG.java:1009)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_SubmitItrCN.png"><p align="left"> screenshot at Wed Nov 04 19:47:03 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- SubmitItrCN -->
-        <test-method status="PASS" signature="StopRecording1()[pri:0, instance:MyPackage.CNRegressionAutomation@9a8472]" name="StopRecording1" is-config="true" duration-ms="1106" started-at="2015-11-04T19:47:03Z" finished-at="2015-11-04T19:47:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StopRecording1 -->
-      </class> <!-- MyPackage.CNRegressionAutomation -->
-    </test> <!-- Test -->
-    <test name="Test A2F" duration-ms="378337" started-at="2015-11-04T14:17:04Z" finished-at="2015-11-04T14:23:22Z">
-      <class name="MyPackage.A2FUSer">
-        <test-method status="PASS" signature="Recording()[pri:0, instance:MyPackage.A2FUSer@16532d6]" name="Recording" is-config="true" duration-ms="39" started-at="2015-11-04T19:47:04Z" finished-at="2015-11-04T19:47:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Recording -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:MyPackage.A2FUSer@16532d6]" name="Login" duration-ms="34755" started-at="2015-11-04T19:47:04Z" finished-at="2015-11-04T19:47:38Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_Login.png"><p align="left"> screenshot at Wed Nov 04 19:47:45 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="PASS" signature="IterationScenarios()[pri:0, instance:MyPackage.A2FUSer@16532d6]" name="IterationScenarios" duration-ms="336586" started-at="2015-11-04T19:47:45Z" finished-at="2015-11-04T19:53:21Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<a href="C:\Users\499290\Desktop\TF\screenshot\_IterationScenarios.png"><p align="left"> screenshot at Wed Nov 04 19:53:22 IST 2015</p>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- IterationScenarios -->
-        <test-method status="PASS" signature="StopRecording1()[pri:0, instance:MyPackage.A2FUSer@16532d6]" name="StopRecording1" is-config="true" duration-ms="396" started-at="2015-11-04T19:53:22Z" finished-at="2015-11-04T19:53:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StopRecording1 -->
-      </class> <!-- MyPackage.A2FUSer -->
-    </test> <!-- Test A2F -->
+      </class> <!-- MyPackage.ConceptNotesubmission -->
+    </test> <!-- Test CNSubmission -->
   </suite> <!-- Default suite -->
 </testng-results>

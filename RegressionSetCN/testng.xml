@@ -5,53 +5,17 @@
   <listeners>
 		<listener class-name="MyPackage.TestListener" />
 	</listeners>
-  <test name="Test">
+	<test name="Test CNSubmission">
    <classes>
-   <class name="MyPackage.CNRegressionAutomation">
+   <class name="MyPackage.ConceptNotesubmission">
       <methods>
-        <include name="Login" />
+       <include name="Login" />
         <include name="VerificationOfOverviewPage" />
-        <exclude name="AddNewPr" />
-        <include name="AddModule" />
-        <include name="AddIntervention" />
-        <include name="AddPRintervention" />
         <include name="TRPDateRegister" />
         <include name="CTPositiveAssessment" />
-        <include name="GoalCreation" />
-        <include name="StdImpactIndicator" />
-        <include name="ObjectiveCreation" />
-        <include name="StdOutcomeIndicator" />
-        <include name="CustomImpactInd" />
-        <include name="CustomOutcomeInd" />
-        <include name="CustomeCoverageOutput" />
-        <include name="CNModuleBudget" />
         <include name="ChangeSubmissionDate" />
-        <include name="UploadFile" />  
-        <include name="SubmitCN" />
-        <include name="CTLogin" />
-        <include name="FinalCoreDocument" /> 
-        <include name="FinalCTReview" />
-        <include name="FinalTranslationReview" />
-        <include name="CCMEditChkAfterCTReview" />
-        <include name="IterationScenarios" />
-        <include name="ItrNotSubmittedEditChk" />
-        <include name="SubmitItrCN" />
-        
-                 
-         </methods>
-      </class>
-    </classes>
-  </test> <!-- Test -->
-   <test name="Test A2F">
-   <classes>
-   <class name="MyPackage.A2FUSer">
-      <methods>
-        <include name="Login" />
-        <include name="IterationScenarios" />
        </methods>
       </class>
     </classes>
-  </test> <!-- Test -->
-  
-  
+  </test> <!-- Test --> 
 </suite> <!-- Suite -->

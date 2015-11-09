@@ -1,34 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [Default suite]" allow-return-values="true">
+<suite verbose="2" name="Failed suite [Default suite]" allow-return-values="true">
   <listeners>
     <listener class-name="MyPackage.TestListener"/>
   </listeners>
-  <test name="Test(failed)">
+  <test name="Test CNSubmission(failed)">
     <classes>
-      <class name="MyPackage.CNRegressionAutomation">
+      <class name="MyPackage.ConceptNotesubmission">
         <methods>
-          <include name="SubmitItrCN"/>
-          <include name="Recording"/>
-          <include name="ItrNotSubmittedEditChk"/>
-          <include name="AddModule"/>
-          <include name="CustomImpactInd"/>
-          <include name="FinalTranslationReview"/>
-          <include name="VerificationOfOverviewPage"/>
           <include name="CTPositiveAssessment"/>
-          <include name="FinalCoreDocument"/>
-          <include name="CustomeCoverageOutput"/>
-          <include name="FinalCTReview"/>
-          <include name="IterationScenarios"/>
-          <include name="StopRecording1"/>
+          <include name="TRPDateRegister"/>
+          <include name="VerificationOfOverviewPage"/>
+          <include name="ChangeSubmissionDate"/>
         </methods>
-      </class> <!-- MyPackage.CNRegressionAutomation -->
-      <class name="MyPackage.A2FUSer">
-        <methods>
-          <include name="Recording"/>
-          <include name="StopRecording1"/>
-        </methods>
-      </class> <!-- MyPackage.A2FUSer -->
+      </class> <!-- MyPackage.ConceptNotesubmission -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test CNSubmission(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
