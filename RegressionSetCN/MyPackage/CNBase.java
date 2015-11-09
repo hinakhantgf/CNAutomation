@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.PrintStream;
 import java.util.Stack;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -36,6 +37,21 @@ public class CNBase {
 	static String Status;
 	static WebElement DecisionDropDown;
 	static WebElement GACConfirmationDropDown;
+	
+	//Function to check element is present on the page
+		public static boolean isElementPresent (String id)
+		{
+			boolean present;
+			if(driver.findElements(By.linkText(id)).size()!=0)
+			{
+			 present = true;
+			}
+			else
+			{
+			 present = false;
+			}
+		return present;
+		}
 	
 	
 	
