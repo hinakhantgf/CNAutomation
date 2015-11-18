@@ -1,7 +1,6 @@
+/properties/
+/test-output/
 /.classpath
 /.project
 /.settings/
-/properties/
-/test-output/
-/testng.xml
 /MyPackage/

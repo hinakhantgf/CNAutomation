@@ -7,15 +7,47 @@
 	</listeners>
 	<test name="Test CNSubmission">
    <classes>
-   <class name="MyPackage.ConceptNotesubmission">
+   <class name="MyPackage.CNRegressionAutomation">
       <methods>
        <include name="Login" />
         <include name="VerificationOfOverviewPage" />
         <include name="TRPDateRegister" />
         <include name="CTPositiveAssessment" />
         <include name="ChangeSubmissionDate" />
+         <include name="AddNewPr" />
+        <include name="AddModule" />
+        <include name="AddIntervention" />
+        <include name="AddPRintervention" />
+        <include name="CNModuleBudget" />
+        <include name="UploadFile" />   
+         <include name="GoalCreation" />
+        <include name="StdImpactIndicator" />
+        <include name="ObjectiveCreation" />
+        <include name="StdOutcomeIndicator" />
+        <include name="CustomImpactInd" />
+        <include name="CustomOutcomeInd" />
+        <include name="CustomeCoverageOutput" />
+         <include name="SubmitCN" />
+        <include name="CTLogin" />
+        <include name="FinalCoreDocument" /> 
+        <include name="FinalCTReview" />
+        <include name="FinalTranslationReview" />
+        <include name="CCMEditChkAfterCTReview" />
+         <include name="IterationScenarios" />
+        <include name="ItrNotSubmittedEditChk" />
+        <include name="SubmitItrCN" />      
        </methods>
       </class>
     </classes>
   </test> <!-- Test --> 
 </suite> <!-- Suite -->
+   <test name="Test A2F">
+   <classes>
+   <class name="MyPackage.A2FUSer">
+      <methods>
+        <include name="Login" />
+        <include name="IterationScenarios" />
+       </methods>
+      </class>
+    </classes>
+  </test> <!-- Test --> 
