@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [Default suite]" allow-return-values="true">
+<suite verbose="2" name="Failed suite [Default suite]" allow-return-values="true">
   <listeners>
     <listener class-name="MyPackage.TestListener"/>
   </listeners>
-  <test name="Test(failed)">
+  <test name="Test(failed)" preserve-order="true">
     <classes>
       <class name="MyPackage.CNRegressionAutomation">
         <methods>
+          <include name="ObjectiveCreation"/>
           <include name="Recording"/>
-          <include name="IterationScenarios"/>
-          <include name="FinalTranslationReview"/>
-          <include name="VerificationOfOverviewPage"/>
           <include name="FinalCTReview"/>
-          <include name="AddModule"/>
           <include name="StopRecording1"/>
-          <include name="CTEditChk"/>
+          <include name="VerificationOfOverviewPage"/>
         </methods>
       </class> <!-- MyPackage.CNRegressionAutomation -->
     </classes>

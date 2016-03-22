@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/156445/Downloads/MonteScreenRecorder.jar"/>
+	<classpathentry kind="src" path=""/>
 	<classpathentry kind="lib" path="D:/selenium-java-2.47.1/selenium-2.47.1/libs/apache-mime4j-0.6.jar"/>
 	<classpathentry kind="lib" path="D:/selenium-java-2.47.1/selenium-2.47.1/libs/bsh-1.3.0.jar"/>
 	<classpathentry kind="lib" path="D:/selenium-java-2.47.1/selenium-2.47.1/libs/cglib-nodep-2.1_3.jar"/>
@@ -52,5 +49,6 @@
 	<classpathentry kind="lib" path="D:/selenium-java-2.47.1/selenium-2.47.1/libs/xalan-2.7.2.jar"/>
 	<classpathentry kind="lib" path="D:/selenium-java-2.47.1/selenium-2.47.1/libs/xercesImpl-2.11.0.jar"/>
 	<classpathentry kind="lib" path="D:/selenium-java-2.47.1/selenium-2.47.1/libs/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

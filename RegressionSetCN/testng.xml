@@ -13,32 +13,36 @@
         <include name="VerificationOfOverviewPage" />
         <exclude name="AddNewPr" />
         <include name="AddModule" />
-        <exclude name="AddIntervention" />
-        <exclude name="AddPRintervention" />
+        <include name="AddIntervention" />
+        <include name="AddPRintervention" />
         <include name="TRPDateRegister" />
         <include name="CTPositiveAssessment" />
-        <exclude name="GoalCreation" />
-        <exclude name="StdImpactIndicator" />
-        <exclude name="ObjectiveCreation" />
-        <exclude name="StdOutcomeIndicator" />
-        <exclude name="CustomImpactInd" />
-        <exclude name="CustomOutcomeInd" />
-        <exclude name="CNModuleBudget" />
-        <exclude name="ChangeSubmissionDate" />
-        <exclude name="UploadFile" />  
+        <include name="GoalCreation" />
+        <include name="StdImpactIndicator" />
+        <include name="ObjectiveCreation" />
+        <include name="StdOutcomeIndicator" />
+        <include name="CustomImpactInd" />
+        <include name="CustomOutcomeInd" />
+        <include name="CustomeCoverageOutput" />
+        <include name="CNModuleBudget" />
+        <include name="ChangeSubmissionDate" />
+        <include name="UploadFile" />  
         <include name="SubmitCN" />
         <include name="CCMEditChk"/>
-        <include name="CTLogin"/>
-        <include name="CTEditChk"/>
-        <include name="FinalCTReview"/>
-        <include name="FinalTranslationReview"/>
-        <include name="CCMEditChkAfterCTReview"/>
-        <include name= "IterationScenarios"/>
-        <include name="ItrNotSubmittedEditChk"/>
-        <include name="SubmitItrCN"/>
-        </methods>
-    </class>
-   </classes>
+        <include name="CTLogin" />
+        <include name="FinalCoreDocument" />
+        <include name="FinalCTReview" />
+        <include name="FinalTranslationReview" />
+        <include name="CCMEditChkAfterCTReview" />
+        <include name="IterationScenarios" />
+        <include name="ItrNotSubmittedEditChk" />
+        <include name="SubmitItrCN" />
+        
+                 
+         </methods>
+      </class>
+    </classes>
+
   </test> <!-- Test -->
 </suite> <!-- Suite -->
                 

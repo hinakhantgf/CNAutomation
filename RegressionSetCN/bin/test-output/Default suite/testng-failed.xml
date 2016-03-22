@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="2" name="Failed suite [Default suite]" allow-return-values="true">
+  <listeners>
+    <listener class-name="MyPackage.TestListener"/>
+  </listeners>
+  <test name="Test(failed)" preserve-order="true">
+    <classes>
+      <class name="MyPackage.CNRegressionAutomation">
+        <methods>
+          <include name="ObjectiveCreation"/>
+          <include name="Recording"/>
+          <include name="FinalCTReview"/>
+          <include name="StopRecording1"/>
+          <include name="VerificationOfOverviewPage"/>
+        </methods>
+      </class> <!-- MyPackage.CNRegressionAutomation -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
